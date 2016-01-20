@@ -26,7 +26,16 @@
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry true
 \use_package amsmath 1
@@ -110,7 +119,7 @@
 איל כהן ועמית טרופ - מההרצאות של גנאדי לוין
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 קבוצה ב-
 \begin_inset Formula $\mathbb{R}^{d}$
 \end_inset
@@ -359,7 +368,7 @@
  קבוצה קומפקטית.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 
 \series bold
 היינה בורל
@@ -1300,7 +1309,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 
 \series bold
 על סדרה יורדת של כדורים
@@ -1570,7 +1579,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
  שלם.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 
 \series bold
 עיקרון של ההעתקה המכווצת
@@ -1730,7 +1739,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 .
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 
 \series bold
 אי שוויון בסל
@@ -1962,7 +1971,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 .
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 
 \series bold
 על מערכת אורתונורמלית שלמה ושוויון פרסבל
@@ -2321,7 +2330,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 .
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 משפט על טור פורייה של פונקציה הגזירה ברציפות למקוטעין
 \end_layout
 
@@ -2556,7 +2565,7 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
  רציפות ולכן שוות.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 תנאי דיני
 \end_layout
 
@@ -2789,7 +2798,7 @@ H[0,2\pi]\ni\frac{f(t)-f(x_{0})}{t-x_{0}}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
  לפי למת רימן לבג.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 משפט בייר
 \end_layout
 
@@ -3027,7 +3036,7 @@ H[0,2\pi]\ni\frac{f(t)-f(x_{0})}{t-x_{0}}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 מרחב מטרי שלם ללא נקודות מבודדות לא ניתן למניה.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 משפט פייר
 \end_layout
 
@@ -3343,7 +3352,7 @@ H[0,2\pi]\ni\frac{f(t)-f(x_{0})}{t-x_{0}}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 משפט על תנאים המבטיחים 
 \begin_inset Formula $\frac{\partial^{2}f}{\partial x\partial y}=\frac{\partial^{2}f}{\partial y\partial x}$
 \end_inset
@@ -3588,7 +3597,7 @@ w(h,k)=\psi'(y_{0}+\theta_{3}k)=\frac{\frac{\partial f}{\partial y}(x_{0}+h,y_{0
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 פיתוח לטור טיילור בכמה משתנים
 \end_layout
 
@@ -3931,7 +3940,7 @@ k_{1}+...+k_{d}=m+1
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 תנאים על נגזרות מסדר ראשון ושני עבור מינימום ומקסימום
 \end_layout
 
