@@ -1,0 +1,4139 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding cp1255
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הוכחות לחלק א' מבחן אינפי מתקדם
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, 
+\numeric on
+2015-2016
+\end_layout
+
+\begin_layout Author
+איל כהן ועמית טרופ - מההרצאות של גנאדי לוין
+\end_layout
+
+\begin_layout Section*
+קבוצה ב-
+\begin_inset Formula $\mathbb{R}^{d}$
+\end_inset
+
+ קומפקטית אמ"מ היא חסומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K\subset(\mathbb{R}^{d},\Vert\cdot\Vert_{p})$
+\end_inset
+
+ קומפקטית 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $K$
+\end_inset
+
+ חסומה וסגורה
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+)
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+(:
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $K\subset(\mathbb{R}^{d},\Vert\cdot\Vert_{p})$
+\end_inset
+
+ קומפקטית.
+ 
+\begin_inset Newline newline
+\end_inset
+
+נניח בשלילה ש-
+\begin_inset Formula $K$
+\end_inset
+
+ לא חסומה, אזי עבור 
+\begin_inset Formula $a\in X$
+\end_inset
+
+ ועבור כל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $K\not\subset B(a,n)$
+\end_inset
+
+, כלומר, קיימת סדרה 
+\begin_inset Formula $\{x_{m}\}\subset K$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\rho(a,x_{m})>n$
+\end_inset
+
+.
+ הסדרה 
+\begin_inset Formula $x_{m}$
+\end_inset
+
+ לא מכילה תת סדרה מתכנסת כי כל סדרה כזו לא חסומה )אם 
+\begin_inset Formula $x_{m}\rightarrow x$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\rho(a,x_{m})\le\rho(a,x)+\rho(x,x_{m})\rightarrow\rho(a,x)$
+\end_inset
+
+(, סתירה לקומפקטיות.
+\begin_inset Newline newline
+\end_inset
+
+נניח בשלילה ש-
+\begin_inset Formula $K$
+\end_inset
+
+ לא סגורה.
+ מהטענה "
+\begin_inset Formula $A\subset X$
+\end_inset
+
+ סגורה 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $A=\{y\in X\ |\ \exists\{x_{n}\}\subset A\ \ \lim_{n\rightarrow\infty}x_{n}=y\}$
+\end_inset
+
+" קיימת סדרה 
+\begin_inset Formula $\{x_{n}\}\subset K$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $x_{n}\rightarrow x$
+\end_inset
+
+ אבל 
+\begin_inset Formula $x\not\in K$
+\end_inset
+
+, לכן אין תת סדרה של 
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+ המתכנסת לנק' מ-
+\begin_inset Formula $K$
+\end_inset
+
+, סתירה לקומפקטיות.
+\begin_inset Newline newline
+\end_inset
+
+)
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+(:
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $K$
+\end_inset
+
+ חסומה וסגורה ו-
+\begin_inset Formula $x^{n}=(x_{1}^{n},...,x_{d}^{n})\ (x^{n})_{n=1}^{\infty}\subset K$
+\end_inset
+
+.
+ 
+\begin_inset Formula $K$
+\end_inset
+
+ חסומה, לכן קיים 
+\begin_inset Formula $r>0$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\forall x\in K\ \Vert x\Vert_{p}\le r$
+\end_inset
+
+, לכן עבור כל 
+\begin_inset Formula $n,\ i$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $|x_{i}^{n}|\le\Vert x_{i}^{n}\Vert\le r$
+\end_inset
+
+, כלומר, כל סדרה 
+\begin_inset Formula $(x_{i}^{n})_{n=1}^{\infty}\subset\mathbb{R}$
+\end_inset
+
+ חסומה.
+ לפי משפט בולצ'אנו ויירשטראס, הסדרה 
+\begin_inset Formula $(x_{1}^{n})_{n=1}^{\infty}$
+\end_inset
+
+ מכילה תת מסדרה מתכנסת 
+\begin_inset Formula $\{n_{j,1}\}\subset\mathbb{N}\ x_{1}^{n_{j,1}}\xrightarrow[j\rightarrow\infty]{}x_{1}$
+\end_inset
+
+.
+ נתבונן ב-
+\begin_inset Formula $(x_{2}^{n_{j,1}})_{j=1}^{\infty}\subset\mathbb{R}$
+\end_inset
+
+.
+ סדרה זו חסומה לכן קיימת 
+\begin_inset Formula $(n_{j,2})\subset(n_{j,1})$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x_{2}^{n_{j,2}}\xrightarrow[j\rightarrow\infty]{}x_{2}$
+\end_inset
+
+.
+ נתבונן ב-
+\begin_inset Formula $(x_{d}^{n_{j,d-1}})_{j=1}^{\infty}\subset\mathbb{R}$
+\end_inset
+
+.
+ סדרה זו חסומה לכן קיימת 
+\begin_inset Formula $(n_{j,d})\subset(n_{j,d-1})$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x_{d}^{n_{j,j}}\xrightarrow[j\rightarrow\infty]{}x_{d}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תת סדרה 
+\begin_inset Formula $(x_{1}^{n_{j,d}},...,x_{d}^{n_{j,d}})_{j=1}^{\infty}=(x^{n_{j,d}})_{j=1}^{\infty}$
+\end_inset
+
+ של 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ מתכנסת כי 
+\begin_inset Formula $(x_{i}^{n_{j,d}})_{j=1}^{\infty}\xrightarrow[i\rightarrow\infty]{}x_{i}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, אזי 
+\begin_inset Formula $x^{n_{j,d}}\rightarrow a=(x_{1},...,x_{d})\in\mathbb{R}^{d}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a\in K$
+\end_inset
+
+ כי 
+\begin_inset Formula $K$
+\end_inset
+
+ קבוצה סגורה ו-
+\begin_inset Formula $(x^{n_{j,d}})_{j=1}^{\infty}\subset K$
+\end_inset
+
+ ומכאן ש-
+\begin_inset Formula $K$
+\end_inset
+
+ קבוצה קומפקטית.
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+היינה בורל
+\end_layout
+
+\begin_layout Standard
+התנאים הבאים שקולים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+ מ"מ קומפקטי
+\end_layout
+
+\begin_layout Enumerate
+כל כסוי פתוח של 
+\begin_inset Formula $X$
+\end_inset
+
+ מכיל תת כיסוי סופי
+\end_layout
+
+\begin_layout Enumerate
+עבור כל אוסף 
+\begin_inset Formula $(F_{\alpha})_{\alpha\in I}$
+\end_inset
+
+ של קבוצות סגורות, מתקיים - אם חיתוך של כל מס' סופי של קבוצות מ-
+\begin_inset Formula $(F_{\alpha})$
+\end_inset
+
+ לא ריק, אזי גם 
+\begin_inset Formula $\emptyset\ne\bigcap_{\alpha\in I}F_{\alpha}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+)
+\numeric on
+2
+\numeric off
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+(:
+\begin_inset Newline newline
+\end_inset
+
+מחוקי דה-מורגן נקבל כי 
+\begin_inset Formula 
+\[
+X\backslash\bigcup_{\alpha}E_{\alpha}=\bigcap_{\alpha}(X\backslash E_{\alpha}),\ X\backslash\bigcap_{\alpha}F_{\alpha}=\bigcup_{\alpha}(X\backslash F_{\alpha})
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $(F_{\alpha})_{\alpha\in I}$
+\end_inset
+
+ אוסף קבוצות סגורות כך שחיתוך של כל מספר סופי של קבוצות מ-
+\begin_inset Formula $(F_{\alpha})_{\alpha\in I}$
+\end_inset
+
+ לא ריק.
+ צ"ל 
+\begin_inset Formula $\emptyset\ne\cap_{\alpha\in I}F_{\alpha}$
+\end_inset
+
+.
+ נניח בשלילה כי 
+\begin_inset Formula $\emptyset=\cap_{\alpha\in I}F_{\alpha}$
+\end_inset
+
+, אזי 
+\begin_inset Formula 
+\[
+\bigcup_{\alpha\in I}(X\backslash F_{\alpha})=X\backslash\bigcap_{\alpha\in I}F_{\alpha}=X\backslash\emptyset=X
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $(X\backslash F_{\alpha})_{\alpha\in I}$
+\end_inset
+
+ כיסוי פתוח )כי כל 
+\begin_inset Formula $F_{\alpha}$
+\end_inset
+
+ קבוצה סגורה(, לכן מ-
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא מכיל כיסוי סופי, כלומר קיימים 
+\begin_inset Formula $\alpha_{1},...,\alpha_{m}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\bigcup_{i=1}^{m}(X\backslash F_{\alpha_{i}})=X$
+\end_inset
+
+ לכן 
+\begin_inset Formula 
+\[
+X\backslash\bigcap_{i=1}^{m}F_{\alpha_{i}}=\bigcup_{i=1}^{m}(X\backslash F_{\alpha_{i}})=X
+\]
+
+\end_inset
+
+כלומר, 
+\begin_inset Formula $\emptyset=\bigcap_{i=1}^{m}F_{\alpha_{i}}$
+\end_inset
+
+, סתירה.
+\begin_inset Newline newline
+\end_inset
+
+)
+\numeric on
+3
+\numeric off
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(: זהה לכיוון הראשון.
+\begin_inset Newline newline
+\end_inset
+
+)
+\numeric on
+3
+\numeric off
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+(: 
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $(x_{n})\subset X$
+\end_inset
+
+.
+ צריך למצוא לה תת סדרה מתכנסת.
+ עבור כל 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+, נגדיר קבוצה 
+\begin_inset Formula 
+\[
+L_{n}(x_{n},x_{n+1},...)\subset X
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מכיוון ש- 
+\begin_inset Formula $L_{n+1}\subset L_{n}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\overline{L_{n+1}}\subset\overline{L_{n}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נתבונן באוסף 
+\begin_inset Formula $(\overline{L_{n}})_{n=1}^{\infty}$
+\end_inset
+
+ של קבוצות סגורות.
+ עבור כל מס' סופי 
+\begin_inset Formula $\overline{L_{n_{1}}},...,\overline{L_{n_{m}}}\subset\overline{L_{n}}$
+\end_inset
+
+ אם 
+\begin_inset Formula $n_{1}<...<n_{m}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\bigcap_{j=1}^{m}\overline{L_{n_{j}}}=\overline{L_{n_{m}}}\ne\emptyset$
+\end_inset
+
+.
+ מ-
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקיים 
+\begin_inset Formula $\bigcap_{n=1}^{\infty}\overline{L_{n}}\ne\emptyset$
+\end_inset
+
+.
+ ניקח 
+\begin_inset Formula $a\in\bigcap_{n=1}^{\infty}\overline{L_{n}}$
+\end_inset
+
+.
+ עבור על 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $a\in\overline{L_{n}}$
+\end_inset
+
+, לכן עבור כל 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+ הכדור 
+\begin_inset Formula $B(a,\frac{1}{k})$
+\end_inset
+
+ נחתך עם 
+\begin_inset Formula $L_{n}$
+\end_inset
+
+.
+ ולכן קיים 
+\begin_inset Formula $x_{n_{1}}\subset L_{1}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\rho(a,x_{n_{1}})<\frac{1}{1}$
+\end_inset
+
+, קיים 
+\begin_inset Formula $n_{2}>n_{1},\ x_{n_{2}}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\rho(a,x_{n_{2}})<\frac{1}{2}$
+\end_inset
+
+ ....קיים 
+\begin_inset Formula $n_{k}>n_{k-1},\ x_{n_{k}}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\rho(a,x_{n_{k}})<\frac{1}{k}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נתבון בתת סדרה 
+\begin_inset Formula $(x_{n_{k}})\subset x_{n}$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $\rho(a,x_{n_{k}})\rightarrow0$
+\end_inset
+
+, לכן 
+\begin_inset Formula $x_{n_{k}}\rightarrow a$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+)
+\numeric on
+1
+\numeric off
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(: 
+\begin_inset Newline newline
+\end_inset
+
+נתון 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"מ קומפקטי.
+ צ"ל אם 
+\begin_inset Formula $(E_{\alpha})_{\alpha\in I}$
+\end_inset
+
+ כיסוי פתוח של 
+\begin_inset Formula $X$
+\end_inset
+
+, אזי הוא מכיל תת כיסוי סופי.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+למה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+קיים 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ הכדור 
+\begin_inset Formula $B(x,\epsilon)$
+\end_inset
+
+ מוכל כולו באחת מקבוצות 
+\begin_inset Formula $E_{\alpha}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+הוכחה:
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+נניח בשלילה שלא קיים 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ כמתואר.
+ אז לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ קיימת נק' 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+כך ש- 
+\begin_inset Formula $B(x_{n},\frac{1}{n})$
+\end_inset
+
+ אינו מוכל באף 
+\begin_inset Formula $E_{\alpha}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"מ קומפקטי, לכן 
+\begin_inset Formula $(x_{n})_{n=1}^{\infty}$
+\end_inset
+
+ מכילה תת סדרה מתכנסת 
+\begin_inset Formula $x_{n_{k}}\rightarrow a$
+\end_inset
+
+.
+ 
+\begin_inset Formula $(E_{\alpha})_{\alpha\in I}$
+\end_inset
+
+ כיסוי, לכן קיים 
+\begin_inset Formula $\alpha_{0}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $a\in E_{\alpha_{0}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $E_{\alpha_{0}}$
+\end_inset
+
+ קבוצה פתוחה )כי זהו כיסוי פתוח(, לכן קיים 
+\begin_inset Formula $\rho>0$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $B(a,\rho)\subset E_{\alpha_{0}}$
+\end_inset
+
+.
+ מכיוון ש- 
+\begin_inset Formula $x_{n_{k}}\rightarrow a$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\frac{1}{n_{k}}\rightarrow0$
+\end_inset
+
+, קיים 
+\begin_inset Formula $k_{0}$
+\end_inset
+
+כך ש- 
+\begin_inset Formula $B(x_{n_{k_{0}}},\frac{1}{n_{k_{0}}})\subset B(a,\rho)$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $B(a,\rho)\subset E_{\alpha_{0}}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $B(x_{n_{k_{0}}},\frac{1}{n_{k_{0}}})\subset E_{\alpha_{0}}$
+\end_inset
+
+ בסתירה לבחירה של 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+למה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים מס' סופי של נק' 
+\begin_inset Formula $x_{1},...,x_{p}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\bigcup_{i=1}^{p}B(x_{i},\epsilon)=X$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+הוכחה:
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+ניקח 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ אם 
+\begin_inset Formula $B(x_{1},\epsilon)=X$
+\end_inset
+
+ סיימנו, אחרת, קיימת נק' 
+\begin_inset Formula $x_{2}\in X$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\rho(x_{1},x_{2})\ge\epsilon$
+\end_inset
+
+ )כלומר, 
+\begin_inset Formula $x_{2}\not\in B(x_{1},\epsilon)$
+\end_inset
+
+(.
+ אם 
+\begin_inset Formula $B(x_{1},\epsilon)\cup C(x_{2},\epsilon)=X$
+\end_inset
+
+ סיימנו, אחרת, קיימת 
+\begin_inset Formula $x_{3}\in X$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\rho(x_{1},x_{3})\ge\epsilon\ \land\ \rho(x_{2},x_{3})\ge\epsilon$
+\end_inset
+
+...
+\begin_inset Newline newline
+\end_inset
+
+אזי או שמצאנו כיסוי סופי של הכדורים עם ה-
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ הנתון, או שמצאנו סדרה 
+\begin_inset Formula $(x_{n})_{n=1}^{\infty}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\rho(x_{i},x_{j})\ge\epsilon$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i<j$
+\end_inset
+
+.
+ הסדרה 
+\begin_inset Formula $(x_{n})_{n=1}^{\infty}$
+\end_inset
+
+ לא מכילה תת סדרה מתכנסת, סתירה.
+ מכאן שמצאנו כיסוי סופי של כדורים עם ה-
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ הנתון.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+חזרה להוכחת המשפט:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+ניקח 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ כמו בלמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ עבור 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ זה, לפי למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קיימות נק' 
+\begin_inset Formula $x_{1},...,x_{p}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\cup_{i=1}^{p}B(x_{i},\epsilon)=X$
+\end_inset
+
+.
+ לפי למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ובחירתו של 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+, לכל כדור 
+\begin_inset Formula $B(x_{i},\epsilon)$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $E_{\alpha_{i}}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $B(x_{1},\epsilon)\subset E_{\alpha_{i}}$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula 
+\[
+X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
+\]
+
+\end_inset
+
+ ולכן 
+\begin_inset Formula $(E_{\alpha_{i}})_{i=1}^{p}$
+\end_inset
+
+ תת כיסוי סופי של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+על סדרה יורדת של כדורים
+\end_layout
+
+\begin_layout Standard
+מרחב מטרי 
+\begin_inset Formula $(X,\rho)$
+\end_inset
+
+ שלם 
+\begin_inset Formula $\iff$
+\end_inset
+
+ לכל סדרה 
+\begin_inset Formula $(B_{n})_{n=1}^{\infty}$
+\end_inset
+
+ של כדורים סגורים, אם 
+\begin_inset Formula $B_{n+1}\subset B_{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n=1,2,...$
+\end_inset
+
+ ורדיוס 
+\begin_inset Formula $r_{n}$
+\end_inset
+
+ של 
+\begin_inset Formula $B_{n}$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $r_{n}\xrightarrow[n\rightarrow\infty]{}0$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\bigcap_{n=1}^{\infty}B_{n}\ne\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+)
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+(:
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"מ שלם ו-
+\begin_inset Formula $(B_{n})_{n=1}^{\infty}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $B_{n}=\overline{B}(x_{n},r_{n})$
+\end_inset
+
+ סדרה כנ"ל.
+ צ"ל 
+\begin_inset Formula $\bigcap_{n=1}^{\infty}B_{n}\ne\emptyset$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עבור כל 
+\begin_inset Formula $m>n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x_{m}\in B_{n}$
+\end_inset
+
+ )כי 
+\begin_inset Formula $B_{m}\subset B_{n}$
+\end_inset
+
+(, לכן 
+\begin_inset Formula $\rho(x_{m},x_{n})<r_{n}\xrightarrow[n\rightarrow\infty]{}0$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $(x_{m})_{m=1}^{\infty}$
+\end_inset
+
+ היא סדרת קושי.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"מ שלם, לכן קיים גבול 
+\begin_inset Formula $\lim_{n\rightarrow\infty}x_{n}=a$
+\end_inset
+
+.
+ נוכיח כי 
+\begin_inset Formula $a\in B_{n}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ עבור כל 
+\begin_inset Formula $n$
+\end_inset
+
+, הסדרה 
+\begin_inset Formula $(x_{n},x_{n+1},...,)\subset B_{n}$
+\end_inset
+
+ ו-
+\begin_inset Formula $B_{n}$
+\end_inset
+
+קבוצה סדורה, לכן 
+\begin_inset Formula $a=\lim_{m\rightarrow\infty,m<n}x_{m}\in B_{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+)
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+(:
+\begin_inset Newline newline
+\end_inset
+
+נניח שכל סדרה של כדורים כנ"ל בעלת חיתוך לא ריק, ונוכיח כי 
+\begin_inset Formula $X$
+\end_inset
+
+ שלם.
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $(x_{n})_{n=1}^{\infty}$
+\end_inset
+
+ סדרת קושי ב-
+\begin_inset Formula $X$
+\end_inset
+
+, אזי קיים 
+\begin_inset Formula $n_{1}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>n_{1}$
+\end_inset
+
+ יתקיים 
+\begin_inset Formula $\rho(x_{n},x_{n_{1}})<\frac{1}{2}$
+\end_inset
+
+.
+ קיים 
+\begin_inset Formula $n_{2}>n_{2}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>n_{2}$
+\end_inset
+
+ יתקיים 
+\begin_inset Formula $\rho(x_{n},x_{n_{2}})<\frac{1}{2^{2}}$
+\end_inset
+
+...
+ קיים 
+\begin_inset Formula $n_{k}>n_{k-1}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>n_{k}$
+\end_inset
+
+ יתקיים 
+\begin_inset Formula $\rho(x_{n},x_{n_{k}})<\frac{1}{2^{k}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר 
+\begin_inset Formula $B_{k}=\overline{B}(x_{n_{k}},\frac{1}{2^{k-1}})$
+\end_inset
+
+ ונוכיח כי 
+\begin_inset Formula $B_{k+1}\subset B_{k}$
+\end_inset
+
+ )כלומר, זוהי סדרה יורדת(.
+ לכל 
+\begin_inset Formula $y\in B_{k+1}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\rho(y,x_{n_{k}})\le\rho(y,x_{n_{k+1}})+\rho(x_{n_{k+1}},x_{n_{k}})\le\frac{1}{2^{k}}+\frac{1}{2^{k}}=\frac{1}{2^{k-1}}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לפי ההנחה, קיימת נק' 
+\begin_inset Formula $a\in\bigcap_{k=1}^{\infty}B_{k}$
+\end_inset
+
+, אזי לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\rho(a,x_{n_{k}})\le\frac{1}{2^{k-1}}\rightarrow0$
+\end_inset
+
+, כלומר, 
+\begin_inset Formula $a$
+\end_inset
+
+ היא הגבול של תת הסדרה 
+\begin_inset Formula $(x_{n_{k}})_{k=1}^{\infty}$
+\end_inset
+
+, לכן גם 
+\begin_inset Formula $(x_{n})_{n=1}^{\infty}$
+\end_inset
+
+ מתכנסת ל-
+\begin_inset Formula $a$
+\end_inset
+
+.
+ קיבלנו כי כל סדרת קושי ב-
+\begin_inset Formula $X$
+\end_inset
+
+ מתכנסת, ולכן 
+\begin_inset Formula $X$
+\end_inset
+
+ שלם.
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+עיקרון של ההעתקה המכווצת
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"מ שלם ו-
+\begin_inset Formula $A:X\rightarrow X$
+\end_inset
+
+ כיווץ.
+ אזי 
+\begin_inset Formula $A$
+\end_inset
+
+ בעלת נק' שבת, 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, יחידה ולכל 
+\begin_inset Formula $y\in X$
+\end_inset
+
+ קיים גבול 
+\begin_inset Formula $\lim_{n\rightarrow\infty}A^{n}y=x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $y\in X$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula 
+\[
+y_{n}=\begin{cases}
+A^{n}y & n=1,2,...\\
+y & n=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נוכיח שהסדרה 
+\begin_inset Formula $(y_{n})_{n=1}^{\infty}$
+\end_inset
+
+ סדרת קושי.
+ לפי ההגדרה קיים 
+\begin_inset Formula $0<\alpha<1$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula 
+\[
+\forall x_{1},x_{2}\in X\ \ \rho(Ax_{1},Ax_{2})\le\alpha\rho(x_{1},x_{2})
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+אזי לכל 
+\begin_inset Formula $m>n$
+\end_inset
+
+ מתקיים-
+\begin_inset Formula 
+\begin{eqnarray*}
+\rho(y_{m},y_{n}) & = & \rho(Ay_{m-1},Ay_{n-1})\le\alpha\rho(y_{m-1},y_{n-1})\le...\le\alpha^{n}\rho(y_{m-n},y_{0})\le\\
+ & \le & \alpha^{n}\sum_{i=0}^{m-n-1}\rho(y_{i},y_{i+1})\le\alpha^{n}\sum_{i=0}^{m-n-1}\alpha^{i}\rho(y_{0},y_{1})\le\alpha^{n}\sum_{i=0}^{\infty}\alpha^{i}\rho(y_{0},y_{1})=\frac{\alpha^{n}}{1-\alpha}\rho(y_{0},y_{1})\xrightarrow[n\rightarrow\infty]{}0
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לכן זוהי סדרת קושי ו-
+\begin_inset Formula $X$
+\end_inset
+
+ שלם ולכן קיים הגבול 
+\begin_inset Formula $x_{0}=\lim_{n\rightarrow\infty}y_{n}=\lim_{n\rightarrow\infty}A^{n}y$
+\end_inset
+
+ ולכן-
+\begin_inset Formula 
+\[
+Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\infty}A(A^{n}y)=\lim_{n\rightarrow\infty}A^{n+1}y=x_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(*)$
+\end_inset
+
+ - מרציפות 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ולכן 
+\begin_inset Formula $x_{o}$
+\end_inset
+
+ נקודת שבת.
+\begin_inset Newline newline
+\end_inset
+
+יחידות - תהי 
+\begin_inset Formula $y_{0}\ne x_{0}$
+\end_inset
+
+ נקודת שבת, אזי 
+\begin_inset Formula 
+\[
+0\ne\rho(x_{0},y_{0})=\rho(Ax_{0},Ay_{0})\le\alpha\rho(x_{0},y_{0})
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+סתירה לכך ש- 
+\begin_inset Formula $\alpha<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+אי שוויון בסל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ מערכת אורתוגונלית סופית או בת מניה במרחב אוקלידי 
+\begin_inset Formula $\mathcal{Y}$
+\end_inset
+
+, אזי לכל 
+\begin_inset Formula $x\in\mathcal{Y}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\sum_{u\in A}(x,u)^{2}\le\Vert x\Vert^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה 
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U=(u_{i})_{i=1}^{n}$
+\end_inset
+
+ מערכת אורתונורמלית סופית במרחב אוקלידי 
+\begin_inset Formula $\mathcal{Y}$
+\end_inset
+
+ ויהי 
+\begin_inset Formula $M$
+\end_inset
+
+ תת מרחב הנפרש ע"י 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ ההטלה 
+\begin_inset Formula $\mathcal{Y}$
+\end_inset
+
+ של וקטור 
+\begin_inset Formula $x\in\mathcal{Y}$
+\end_inset
+
+ ל-
+\begin_inset Formula $M$
+\end_inset
+
+ היא 
+\begin_inset Formula $y=\sum_{i=1}^{n}(x,u_{i})u_{i}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $x-y$
+\end_inset
+
+ ניצב לכל 
+\begin_inset Formula $z\in M$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula 
+\[
+\forall y\ne z\in M\ \ \Vert x-y\Vert<\Vert x-z\Vert
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחת הטענה
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $M\ni z=\sum_{j=1}^{n}\lambda_{j}u_{j}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\begin{eqnarray*}
+(x-y,z) & = & (x-\sum_{i=1}^{n}(x,u_{i})u_{i},\sum_{j=1}^{n}\lambda_{j}u_{j})=(x,\sum_{j=1}^{n}\lambda_{j}u_{j})-(\sum_{i=1}^{n}(x,u_{i})u_{i},\sum_{j=1}^{n}\lambda_{j}u_{j})=\\
+ & = & \sum_{j=1}^{n}\lambda_{j}(x,u_{j})-\sum_{i=1}^{n}\sum_{j=1}^{n}(x,u_{i})\lambda_{j}(u_{i},u_{j})=\sum_{j=1}^{n}\lambda_{j}(x,u_{j})-\sum_{j=1}^{n}(x,u_{i})\lambda_{j}=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כלומר 
+\begin_inset Formula $z\perp(x-y)$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $z\in M$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $y\ne z\in M$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\Vert x-z\Vert^{2}=\Vert(x-y)+(y-)\Vert^{2}\overset{(1)}{=}\Vert x-y\Vert^{2}+\Vert y-z\Vert^{2}\overset{(2)}{\ge}\Vert x-y\Vert^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(1)$
+\end_inset
+
+ - 
+\begin_inset Formula $x-y\perp y-z$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(2)$
+\end_inset
+
+ - 
+\begin_inset Formula $y\ne z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\Vert x-\sum_{i=1}^{n}(x,u_{i})u_{i}\Vert^{2} & = & (x-\sum_{i=1}^{n}(x,u_{i})u_{i},x-\sum_{i=1}^{n}(x,u_{i})u_{i})=\\
+ & = & (x-\sum_{i=1}^{n}(x,u_{i})u_{i},x)-(x-\sum_{i=1}^{n}(x,u_{i})u_{i},\sum_{i=1}^{n}(x,u_{i})u_{i})\overset{(*)}{=}(x-\sum_{i=1}^{n}(x,u_{i})u_{i},x)=\\
+ & = & \Vert x\Vert^{2}-\sum_{i=1}^{n}(x,u_{i})(u_{i},x)=\Vert x\Vert^{2}-\sum_{i=1}^{n}(x,u_{i})^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(*)$
+\end_inset
+
+ - 
+\begin_inset Formula $(x-\sum_{i=1}^{n}(x,u_{i})u_{i},\sum_{i=1}^{n}(x,u_{i})u_{i})=0$
+\end_inset
+
+ כי 
+\begin_inset Formula $x-\sum_{i=1}^{n}(x,u_{i})u_{i}=x-y$
+\end_inset
+
+ ו-
+\begin_inset Formula $\sum_{i=1}^{n}(x,u_{i})u_{i}=y\in M$
+\end_inset
+
+ ומהטענה הם ניצבים.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחת אי שוויון בסל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה סופית, אזי מתקיימת המסקנה.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $A=(u_{i})_{i=1}^{n}$
+\end_inset
+
+ אזי לפי המסקנה
+\backslash
+ עבור כל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\sum_{i=1}^{n}(x,u_{i})^{2}\le\Vert x\Vert^{2}$
+\end_inset
+
+ לכן מתקיים 
+\begin_inset Formula $\sum_{i=1}^{\infty}(x,u_{i})^{2}\le\Vert x\Vert^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+על מערכת אורתונורמלית שלמה ושוויון פרסבל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\phi=(\varphi_{i})_{i=1}^{\infty}$
+\end_inset
+
+ מערכת אורתונורמלית במרחב אוקלידי 
+\begin_inset Formula $\mathcal{Y}$
+\end_inset
+
+, התנאים הבאים שקולים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phi$
+\end_inset
+
+ שלמה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phi$
+\end_inset
+
+ בסיס.
+ יתר על כן, עבור כל 
+\begin_inset Formula $x\in\mathcal{Y}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x=\sum_{i=1}^{\infty}(x,\varphi_{i})\varphi_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+עבור כל 
+\begin_inset Formula $x\in\mathcal{Y}$
+\end_inset
+
+ מתקיים שוויון פרסבל:
+\begin_inset Formula 
+\[
+\Vert x\Vert^{2}=\sum_{i=1}^{\infty}(x,\varphi_{i})^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+)
+\numeric on
+1
+\numeric off
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(:
+\begin_inset Newline newline
+\end_inset
+
+נתון 
+\begin_inset Formula $\text{\phi}$
+\end_inset
+
+ מערכת אורתונורמלית שלמה.
+ צ"ל עבור כל 
+\begin_inset Formula $x\in\mathcal{Y}$
+\end_inset
+
+ קיימת הצגה יחידה 
+\begin_inset Formula $x=\sum_{i=1}^{\infty}(x,\varphi_{i})\varphi_{i}$
+\end_inset
+
+, כלומר, לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n_{0}=n_{0(\epsilon)}$
+\end_inset
+
+ )תלוי ב-
+\begin_inset Formula $\epsilon$
+\end_inset
+
+( כך שלכל 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\Vert x-\sum_{i=1}^{\infty}(x,\varphi_{i})\varphi_{i}\Vert<\epsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+פיתוח 
+\begin_inset Formula $x=\sum_{i=1}^{\infty}\lambda_{i}\varphi_{i}$
+\end_inset
+
+ הוא יחיד, לכן 
+\begin_inset Formula 
+\[
+0=x-x=\sum_{i=1}^{\infty}(\lambda_{i}-(x,\varphi_{i}))\varphi_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0=(0,\varphi_{j})=\sum_{i=1}^{\infty}(\lambda_{i}-(x,\varphi_{i}))(\varphi_{i},\varphi_{j})=\lambda_{j}-(x,\varphi_{j})
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\phi$
+\end_inset
+
+ שלמה לכם קיים 
+\begin_inset Formula $n_{0(\epsilon)_{(}}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\lambda_{1},...,\lambda_{n_{0}}\in\mathbb{R}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\Vert x-\sum_{i=1}^{n_{0}}\lambda_{i}\varphi_{i}\Vert<\epsilon$
+\end_inset
+
+.
+ לפי טענה על ההטלה >>>?<<< מתקיים 
+\begin_inset Formula 
+\[
+\Vert x-\sum_{i=1}^{n_{0}}(x,\varphi_{i})\varphi_{i}\Vert\le\Vert x-\sum_{i=1}^{n_{0}}\lambda_{i}\varphi_{i}\Vert<\epsilon
+\]
+
+\end_inset
+
+לכן עבור כל 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+ ולפי המסקנה בהוכחה של בסל נקבל כי
+\begin_inset Formula 
+\[
+\Vert x-\sum_{i=1}^{n}(x,\varphi_{i})\varphi_{i}\Vert\le\Vert x-\sum_{i=1}^{n_{0}}(x,\varphi_{i})\varphi_{i}\Vert<\epsilon
+\]
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+)
+\numeric on
+2
+\numeric off
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+(:
+\begin_inset Newline newline
+\end_inset
+
+לפי המסקנה בהוכחה של בסל נקבל
+\begin_inset Formula 
+\[
+\Vert x-\sum_{i=1}^{n}(x,\varphi_{i})\varphi_{i}\Vert^{2}=\Vert x\Vert^{2}-\sum_{i=1}^{n}(x,\varphi_{i})^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מ-
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקבל 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\Vert x-\sum_{i=1}^{n}(x,\varphi_{i})\varphi_{i}\Vert=0$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\Vert x\Vert^{2}=\sum_{i=1}^{n}(x,\varphi_{i})^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+)
+\numeric on
+3
+\numeric off
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+(: 
+\begin_inset Newline newline
+\end_inset
+
+אם עבור 
+\begin_inset Formula $x\in\mathcal{Y}$
+\end_inset
+
+ יתקיים 
+\begin_inset Formula $\Vert x\Vert^{2}=\sum_{i=1}^{n}(x,\varphi_{i})^{2}$
+\end_inset
+
+ אזי לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\Vert x-\sum_{i=1}^{n}(x,\varphi_{i})\varphi_{i}\Vert^{2}=\Vert x\Vert^{2}-\sum_{i=1}^{n}(x,\varphi_{i})^{2}\xrightarrow[n\rightarrow\infty]{}0
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כלומר, 
+\begin_inset Formula $x\in Span(\phi)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט על טור פורייה של פונקציה הגזירה ברציפות למקוטעין
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בקטע 
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+ וגזירה ברציפות למקוטעין ב- 
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+ ו- 
+\begin_inset Formula $f(0)=f(2\pi)$
+\end_inset
+
+ אזי בכל 
+\begin_inset Formula $x\in[0,2\pi]$
+\end_inset
+
+ טור פורייה של 
+\begin_inset Formula $f$
+\end_inset
+
+ מתכנס במידה שווה ב- 
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+ ל- 
+\begin_inset Formula $f$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f(x)=a_{0}(f)+\sum_{n=1}^{\infty}a_{n}(f)\cos(nx)+\sum_{n=1}^{\infty}b_{n}(f)\sin(nx)
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+הפונקציה 
+\begin_inset Formula $f'$
+\end_inset
+
+ אינטגרבילית רימן ב- 
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+ לכן קיימות 
+\begin_inset Formula $a_{n}(f')$
+\end_inset
+
+ ו- 
+\begin_inset Formula $b_{n}(f')$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\cos(nx)dx\overset{\star}{=}\frac{1}{\pi}[f(x)\frac{\sin(nx)}{n}|_{0}^{2\pi}-\int_{0}^{2\pi}\frac{\sin(nx)}{n}f'(x)dx]=\\
+ & = & -\frac{1}{n}\frac{1}{\pi}\int_{0}^{2\pi}f'(x)\sin(nx)dx=-\frac{1}{n}b_{n}(f')
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\begin_inset Formula $\star$
+\end_inset
+
+ - אינטגרציה בחלקים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac{1}{\pi}[-f(x)\frac{\cos(nx)}{n}|_{0}^{2\pi}+\int_{0}^{2\pi}\frac{\cos(nx)}{n}f'(x)dx]=\\
+ & = & \frac{1}{\pi}[-\frac{1}{n}(f(2\pi)-f(0))+\frac{1}{n}\int_{0}^{2\pi}f'(x)\cos(nx)dx]=\frac{1}{n}a_{n}(f')
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\begin_inset Formula $\star$
+\end_inset
+
+ - אינטגרציה בחלקים
+\end_layout
+
+\begin_layout Standard
+מצד שני, לפי אי שיוויון בסל לפונקציה 
+\begin_inset Formula $f\in H[0,2\pi]$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}a_{n}(f')^{2}<\infty,\ \sum_{n=1}^{\infty}b_{n}(f')^{2}<\infty
+\]
+
+\end_inset
+
+מכיוון ש- 
+\begin_inset Formula 
+\[
+|a_{n}(f)|=\frac{1}{n}|b_{n}(f')|\le\frac{1}{2}(b_{n}(f')^{2}+\frac{1}{n^{2}})
+\]
+
+\end_inset
+
+ ו-
+\begin_inset Formula 
+\[
+|b_{n}(f)|=\frac{1}{n}|a_{n}(f')|\le\frac{1}{2}(a_{n}(f')^{2}+\frac{1}{n^{2}})
+\]
+
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+|a_{0}(f)|+\sum_{n=1}^{\infty}(|a_{n}(f)|+|b_{n}(f)|)\le|a_{0}(f)|+\frac{1}{2}[\sum_{n=1}^{\infty}(a_{n}(f')^{2}+b_{n}(f')^{2})+2\sum_{n=1}^{\infty}\frac{1}{n^{2}}]<\infty
+\]
+
+\end_inset
+
+ אבל לכל 
+\begin_inset Formula $x\in[0,2\pi]$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+|a_{n}(f)\cos(nx)| & \le & |a_{n}(f)|\\
+|b_{n}(f)\sin(nx)| & \le & |b_{n}(f)|
+\end{eqnarray*}
+
+\end_inset
+
+ לפי קריטריון ויירשטראס, טור פורייה:
+\begin_inset Formula 
+\[
+\mathscr{S}_{n}^{f}(x)=a_{0}(f)+\sum_{k=1}^{n}a_{k}(f)\cos(nx)+\sum_{k=1}^{n}b_{k}(f)\sin(nx)
+\]
+
+\end_inset
+
+ מתכנס בהחלט ובמידה שווה ל- 
+\begin_inset Formula $\mathscr{S}^{f}(x)$
+\end_inset
+
+ אשר היא פונקציה רציפה ב- 
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+ )כי אברי הטור הם פונקציות רציפות ב- 
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+ וההתכנסות היא במידה שווה(.
+ אבל 
+\begin_inset Formula $\mathscr{S}_{n}^{f}\rightarrow f$
+\end_inset
+
+ בממוצע, כלומר 
+\begin_inset Formula 
+\[
+(1)\ \int_{0}^{2\pi}(\mathscr{S}_{n}^{f}(x)-\mathscr{S}^{f}(x))^{2}dx\xrightarrow[n\rightarrow\infty]{}0
+\]
+
+\end_inset
+
+ מצד שני 
+\begin_inset Formula $f\in H[0,2\pi]$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+(2)\ \int_{0}^{2\pi}(\mathscr{S}_{n}^{f}(x)-f(x))^{2}dx\xrightarrow[n\rightarrow\infty]{}0
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $\Vert\mathscr{S}_{n}^{f}-\mathscr{S}^{f}\Vert_{2}\rightarrow0\iff(1)$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\Vert\mathscr{S}_{n}^{f}-f\Vert_{2}\rightarrow0\iff(2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $[f]=[\mathscr{S}^{f}]$
+\end_inset
+
+ ב- 
+\begin_inset Formula $H[0,2\pi]$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $f=\mathscr{S}^{f}$
+\end_inset
+
+ כמעט תמיד, אבל 
+\begin_inset Formula $f$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\mathscr{S}^{f}$
+\end_inset
+
+ רציפות ולכן שוות.
+\end_layout
+
+\begin_layout Section*
+תנאי דיני
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f\in H[0,2\pi]$
+\end_inset
+
+, 
+\begin_inset Formula $x_{0}\in(0,2\pi)$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+\int_{x_{0}-\delta}^{x_{0}+\delta}|\frac{f(x)-f(x_{0})}{x-x_{0}}|dx<\infty
+\]
+
+\end_inset
+
+ אזי טור פורייה של 
+\begin_inset Formula $f$
+\end_inset
+
+ מתכנס ב- 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ל- 
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+טענה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\psi$
+\end_inset
+
+ מוגדרת ב- 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, אינטגרבילית ב- 
+\begin_inset Formula $[0,T]$
+\end_inset
+
+ עבור 
+\begin_inset Formula $T>0$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $\forall x\in\mathbb{R}\ \psi(x+T)=\psi(x)$
+\end_inset
+
+, אזי עבור כל 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\int_{a}^{a+T}\psi(x)dx=\int_{0}^{T}\psi(x)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחת הטענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{a+T}\psi(x)dx-\int_{0}^{T}\psi(x)dx=\int_{a}^{T}\psi(x)dx+\int_{T}^{a+T}\psi(x)dx-(\int_{a}^{T}\psi(x)dx+\int_{0}^{a}\psi(x)dx)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{T}^{a+T}\psi(x)dx-\int_{0}^{a}\psi(x)dx\overset{x=y+T}{=}\int_{0}^{a}\psi(y+t)dy-\int_{0}^{a}\psi(x)dx=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחת המשפט
+\end_layout
+
+\begin_layout Standard
+מהטענה נקבל
+\begin_inset Formula 
+\[
+\int_{0}^{2\pi}D_{n}(x_{0}-t)dt=\int_{x_{0}}^{x_{0}-2\pi}D_{n}(\tau)d\tau=\int_{x_{0}-2\pi}^{x_{0}}D_{n}(\tau)d\tau=\int_{0}^{2\pi}D_{n}(\tau)d\tau=2\pi
+\]
+
+\end_inset
+
+ לכן
+\begin_inset Formula 
+\[
+f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x_{0}-t)dt-\frac{1}{2\pi}\int_{0}^{2\pi}f(t)D_{n}(x_{0}-t)dt=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{2\pi}\int_{0}^{2\pi}[\frac{f(x_{0})-f(t)}{x_{0}-t}][\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}]\sin(\frac{2n+1}{2}(x_{0}-t))dt\overset{\star}{=}...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+פונקציה 
+\begin_inset Formula $g(t)=\frac{f(t)-f(x_{0})}{t-x_{0}}$
+\end_inset
+
+ אינטגרבילית ב- 
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+ כי 
+\begin_inset Formula $g$
+\end_inset
+
+ אינטגרבילית ב- 
+\begin_inset Formula $(x_{0}-\delta,x_{0}+\delta)$
+\end_inset
+
+ לפי תנאי דיני.
+ עבור 
+\begin_inset Formula $x\in(0,2\pi)\backslash(x_{0}-\delta,x_{0}+\delta)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $|g(n)|\le\frac{1}{\delta}|f(t)-f(x_{0})|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+פונקציה 
+\begin_inset Formula $\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}$
+\end_inset
+
+ אינטגרבילית ב- 
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+ כי:
+\begin_inset Newline newline
+\end_inset
+
+כאשר 
+\begin_inset Formula $\sin(\frac{x_{0}-t}{2})=0$
+\end_inset
+
+ ו- 
+\begin_inset Formula $t\in[0,2\pi]$
+\end_inset
+
+ אז 
+\begin_inset Formula $\frac{x_{0}-t}{2}=\pi k$
+\end_inset
+
+ עבור 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $t=x_{0}$
+\end_inset
+
+ אבל ב- 
+\begin_inset Formula $t=x_{0}$
+\end_inset
+
+ הפונקציה 
+\begin_inset Formula $\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}$
+\end_inset
+
+ רציפה ולכן
+\begin_inset Formula 
+\[
+H[0,2\pi]\ni\frac{f(t)-f(x_{0})}{t-x_{0}}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}=\varphi(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+...\overset{\star}{=}\frac{1}{2\pi}\int_{0}^{2\pi}\varphi(t)\sin(\frac{2n+1}{2}(x_{0}-t))dt\xrightarrow[n\rightarrow\infty]{}0
+\]
+
+\end_inset
+
+ לפי למת רימן לבג.
+\end_layout
+
+\begin_layout Section*
+משפט בייר
+\end_layout
+
+\begin_layout Standard
+לא ניתן להציג מרחב מטרי שלם כאיחוד בן מניה של קבוצות דלילות: אם 
+\begin_inset Formula $X$
+\end_inset
+
+ שלם ולכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ הקבוצה 
+\begin_inset Formula $A_{n}\subset X$
+\end_inset
+
+ דלילה אזי 
+\begin_inset Formula $X\ne\bigcup_{n\in\mathbb{N}}A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה 
+\begin_inset Formula $X=\bigcup_{n\in\mathbb{N}}A_{n}$
+\end_inset
+
+ כאשר כל 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ קבוצה דלילה ו- 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב מטרי שלם.
+\end_layout
+
+\begin_layout Standard
+נקח כדור סגור 
+\begin_inset Formula $\overline{B_{0}}$
+\end_inset
+
+ עם רדיוס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ קבוצה דלילה לכן קיים כדור סגור 
+\begin_inset Formula $\overline{B_{1}}$
+\end_inset
+
+ עם רדיוס 
+\begin_inset Formula $\frac{1}{2}>$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\overline{B_{1}}\subset\overline{B_{0}}$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\overline{B_{1}}\cap A_{1}=\emptyset$
+\end_inset
+
+.
+ גם 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ קבוצה דלילה, לכן קיים כדור סגור 
+\begin_inset Formula $\overline{B_{2}}$
+\end_inset
+
+ עם רדיוס 
+\begin_inset Formula $\frac{1}{3}<$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\overline{B_{2}}\subset\overline{B_{1}}$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\overline{B_{2}}\cap A_{2}=\emptyset$
+\end_inset
+
+, ולכן גם 
+\begin_inset Formula $\overline{B_{2}}\cap A_{1}=\emptyset$
+\end_inset
+
+.
+ )...( גם 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ קבוצה דלילה, לכן קיים כדור סגור 
+\begin_inset Formula $\overline{B_{n}}$
+\end_inset
+
+ עם רדיוס 
+\begin_inset Formula $\frac{1}{n+1}<$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\overline{B_{n}}\subset\overline{B_{n-1}}$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\overline{B_{n}}\cap A_{n}=\emptyset$
+\end_inset
+
+ ובהכרח 
+\begin_inset Formula $\overline{B_{n}}\cap A_{k}=\emptyset$
+\end_inset
+
+ לכל 
+\begin_inset Formula $1\le k\le n-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב מטרי שלם 
+\begin_inset Formula $(\overline{B_{n}})_{n=1}^{\infty}$
+\end_inset
+
+ סדרה יורדת של כדורים סגורים עם רדיוס שואף ל-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ לכן, לפי משפט קודם, קיימת 
+\begin_inset Formula $z$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $z\in\bigcap_{n\in\mathbb{N}}B_{n}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $z\notin A_{n}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, סתירה.
+\end_layout
+
+\begin_layout Paragraph
+ניסוח שקול
+\end_layout
+
+\begin_layout Standard
+במילים אחרות, אם כל קבוצה 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ היא פתוחה וצפופה ב- 
+\begin_inset Formula $X$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\bigcap_{n\in\mathbb{N}}E_{n}$
+\end_inset
+
+ היא גם קבוצה צפופה.
+\end_layout
+
+\begin_layout Paragraph
+מסקנה
+\end_layout
+
+\begin_layout Standard
+מרחב מטרי שלם ללא נקודות מבודדות לא ניתן למניה.
+\end_layout
+
+\begin_layout Section*
+משפט פייר
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב- 
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+ ו- 
+\begin_inset Formula $f(0)=f(2\pi)$
+\end_inset
+
+, אזי סכומי 
+\begin_inset Formula $Fejer$
+\end_inset
+
+ 
+\begin_inset Formula $\{\sigma_{n}(x)\}_{n=1}^{\infty}$
+\end_inset
+
+ מתכנסים ל- 
+\begin_inset Formula $f$
+\end_inset
+
+ במידה שווה על 
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נמשיך את 
+\begin_inset Formula $f$
+\end_inset
+
+ עד פונקציה רציפה 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ מחזורית ב- 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ נקח 
+\begin_inset Formula $x\in[0,2\pi]$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\sigma_{n}(x)-f(x) & \overset{(1)}{=} & \frac{1}{2\pi}\int_{0}^{2\pi}f(t)k_{n}(x-t)dt-\frac{1}{2\pi}\int_{0}^{2\pi}f(x)k_{n}(x-t)dt\\
+ & \overset{}{=} & \frac{1}{2\pi}\int_{0}^{2\pi}(f(t)-f(x))k_{n}(x-t)dt\\
+ & \overset{(2)}{=} & \frac{1}{2\pi}\int_{-x}^{2\pi-x}(f(x+\tau)-f(x))k_{n}(\tau)d\tau\\
+ & \overset{}{=} & \frac{1}{2\pi}\int_{-\pi}^{\pi}(f(x+\tau)-f(x))k_{n}(\tau)d\tau
+\end{eqnarray*}
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $(1)$
+\end_inset
+
+ מתקיים מתכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ נסמן 
+\begin_inset Formula $\tau=x-t$
+\end_inset
+
+ ואז 
+\begin_inset Formula $(2)$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $k_{n}$
+\end_inset
+
+ זוגית ולכן 
+\begin_inset Formula $k_{n}(t-x)=k_{n}(x-t)=k_{n}(\tau)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו- 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ מחזורית ב- 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ולכן חסומה ורציפה במידה שווה.
+ יהא 
+\begin_inset Formula $M>0$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\forall x\in\mathbb{R}\ |f(x)|\le M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+.
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $|x_{1}-x_{2}|<\delta\implies|f(x_{1})-f(x_{2})|<\epsilon$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+|\sigma_{n}(x)-f(x)|=|\frac{1}{2\pi}\int_{-\pi}^{-\delta}+\frac{1}{2\pi}\int_{-\delta}^{\delta}+\frac{1}{2\pi}\int_{\delta}^{\pi}|
+\]
+
+\end_inset
+
+נמצא חסמים לשלושת האינטגרלים הללו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|\frac{1}{2\pi}\int_{-\delta}^{\delta}[f(x+\tau)-f(x)]k_{n}(\tau)d\tau|\le\frac{1}{2\pi}\int_{-\delta}^{\delta}|f(x-\tau)-f(x)|k_{n}(\tau)d\tau\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overset{(1)}{\le}\epsilon\frac{1}{2\pi}\int_{-\pi}^{\pi}k_{n}(\tau)d\tau\overset{(2)}{=}\epsilon
+\]
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $(1)$
+\end_inset
+
+ מתקיים כי הגדלנו את טווח האינטגרל.
+ 
+\begin_inset Formula $(2)$
+\end_inset
+
+ מתקיים מתכונה 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|\frac{1}{2\pi}\int_{-\pi}^{-\delta}[f(x+\tau)-f(x)]k_{n}(\tau)d\tau+\frac{1}{2\pi}\int_{\delta}^{\pi}[f(x+\tau)-f(x)]k_{n}(\tau)d\tau|\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le\frac{1}{2\pi}\int_{-\pi}^{-\delta}|f(x+\tau)-f(x)|k_{n}d\tau+\frac{1}{2\pi}\int_{\delta}^{\pi}|f(x+\tau)-f(x)|k_{n}d\tau\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le2M\frac{1}{2\pi}[\int_{-\pi}^{-\delta}k_{n}(\tau)d\tau+\int_{\delta}^{\pi}k_{n}(\tau)d\tau]\overset{(1)}{=}\frac{2M}{2\pi}[\int_{\delta}^{\pi}k_{n}(\tau)d\tau+\int_{\pi}^{2\pi-\delta}k_{n}(t')dt']=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{2M}{2\pi}\int_{\delta}^{2\pi-\delta}k_{n}(\tau)d\tau
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $(1)$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $\tau=t'-2\pi$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\pi\le t'\le2\pi-\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיים 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\frac{1}{2\pi}\int_{\delta}^{2\pi-\delta}k_{n}(\tau)d\tau<\frac{\epsilon}{2M}
+\]
+
+\end_inset
+
+ עבור 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ נתון מצאנו 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+|\sigma_{n}(x)-f(x)|<2\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט על תנאים המבטיחים 
+\begin_inset Formula $\frac{\partial^{2}f}{\partial x\partial y}=\frac{\partial^{2}f}{\partial y\partial x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\Omega\subset\mathbb{R}^{2}$
+\end_inset
+
+ קבוצה פתוחה ו- 
+\begin_inset Formula $f:\Omega\rightarrow\mathbb{R}$
+\end_inset
+
+ בעלת נגזרות חלקיות בכל נקודה 
+\begin_inset Formula $(x,y)\in\Omega$
+\end_inset
+
+.
+ נניח שבכל 
+\begin_inset Formula $(x,y)\in\Omega$
+\end_inset
+
+ קיימות נגזרות משולבות 
+\begin_inset Formula $\frac{\partial^{2}f}{\partial x\partial y}$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\frac{\partial^{2}f}{\partial y\partial x}$
+\end_inset
+
+ והן רציפות בנקודה 
+\begin_inset Formula $(x_{0},y_{0})\in\Omega$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+\frac{\partial^{2}f}{\partial x\partial y}(x_{0},y_{0})=\frac{\partial^{2}f}{\partial y\partial x}(x_{0},y_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $(x_{0},y_{0})\in\Omega$
+\end_inset
+
+.
+ עבור כל 
+\begin_inset Formula $h,k\in\mathbb{R}\backslash\{0\}$
+\end_inset
+
+ מספיק קטנים, נגדיר את הפוקנציה:
+\begin_inset Formula 
+\[
+w(h,k)=f(x_{0}+h,y_{0}+k)-f(x_{0},y_{0}+k)-f(x_{0}+h,y_{0})+f(x_{0},y_{0})
+\]
+
+\end_inset
+
+ ונגדיר פונקציה
+\begin_inset Formula 
+\[
+\varphi(x)=\frac{f(x,y_{0}+k)-f(x,y_{0})}{k}
+\]
+
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $0\ne|k|$
+\end_inset
+
+ מספיק קטן.
+ כעת
+\begin_inset Formula 
+\[
+w(h,k)=\frac{\varphi(x_{0}+h)-\varphi(x_{0})}{h}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ גזירה )לפי 
+\begin_inset Formula $x$
+\end_inset
+
+( בכל 
+\begin_inset Formula $x$
+\end_inset
+
+ מספיק קרוב ל- 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ מכיוון ש-
+\begin_inset Formula 
+\[
+\varphi'(x)=\frac{\frac{\partial f}{\partial x}(x,y_{0}+k)-\frac{\partial f}{\partial x}(x,y_{0})}{k}
+\]
+
+\end_inset
+
+ אזי לפי משפט ערך הביניים, קיים 
+\begin_inset Formula $\theta_{1}\in(0,1)$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+w(h,k)=\frac{\varphi'(x_{0}+\theta_{1}h)h}{h}=\varphi'(x_{0}+\theta_{1}h)=\frac{\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y_{0}+k)-\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y_{0})}{k}
+\]
+
+\end_inset
+
+ נשתמש במשפט ערך הביינים לפונקציה 
+\begin_inset Formula $\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $y\in[y_{0},y_{0}+k]$
+\end_inset
+
+.
+ פונקציה זו גזירה לפי 
+\begin_inset Formula $y\in(y_{0},y_{0}+k)$
+\end_inset
+
+ כי קיימת
+\begin_inset Formula 
+\[
+\frac{\partial}{\partial y}(\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y))=\frac{\partial^{2}f}{\partial x\partial y}(x_{0}+\theta_{1}h,y)
+\]
+
+\end_inset
+
+ לכן קיימת 
+\begin_inset Formula $\theta_{2}\in(0,1)$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+w(h,k)=\frac{\partial^{2}f}{\partial x\partial y}(x_{0}+\theta_{1}h,y_{0}+\theta_{2}k)
+\]
+
+\end_inset
+
+ באופן דומה אם נגדיר
+\begin_inset Formula 
+\[
+\psi(y)=\frac{f(x_{0}+h,y)-f(x_{0},y)}{h}
+\]
+
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+w(h,k)=\frac{\psi(y_{0}+k)-\psi(y_{0})}{k}
+\]
+
+\end_inset
+
+ ולען קיימת 
+\begin_inset Formula $\theta_{3}\in(0,1)$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+w(h,k)=\psi'(y_{0}+\theta_{3}k)=\frac{\frac{\partial f}{\partial y}(x_{0}+h,y_{0}+\theta_{3}k)-\frac{\partial f}{\partial y}(x_{0},y_{0}+\theta_{3}k)}{h}=\frac{\partial^{2}f}{\partial y\partial x}(x_{0}+\theta_{4}h,y_{0}+\theta_{3}k)
+\]
+
+\end_inset
+
+ עבור 
+\begin_inset Formula $\theta_{4}\in(0,1)$
+\end_inset
+
+.
+ הוכחנו כי לכל 
+\begin_inset Formula $h,k\ne0$
+\end_inset
+
+ קטנים, קיימים 
+\begin_inset Formula $\theta_{i}\in(0,1)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $1\le i\le k$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+\frac{\partial^{2}f}{\partial y\partial x}(x_{0}+\theta_{4}h,y_{0}+\theta_{3}k)=w(h,k)=\frac{\partial^{2}f}{\partial x\partial y}(x_{0}+\theta_{1}h,y_{0}+\theta_{2}k)
+\]
+
+\end_inset
+
+ מרציפות 
+\begin_inset Formula $\frac{\partial^{2}f}{\partial y\partial x}$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\frac{\partial^{2}f}{\partial x\partial y}$
+\end_inset
+
+ ב- 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ קיימים
+\begin_inset Formula 
+\[
+\lim_{h,k\rightarrow0}\frac{\partial^{2}f}{\partial x\partial y}(x_{0}+\theta_{1}h,y_{0}+\theta_{2}k)=\frac{\partial^{2}f}{\partial x\partial y}(x_{0},y_{0})=\lim_{h,k\rightarrow0}w(h,k)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{h,k\rightarrow0}\frac{\partial^{2}f}{\partial y\partial x}(x_{0}+\theta_{4}h,y_{0}+\theta_{3}k)=\frac{\partial^{2}f}{\partial y\partial x}(x_{0},y_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+פיתוח לטור טיילור בכמה משתנים
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:B(\overline{x_{0}},\epsilon)\rightarrow\mathbb{R}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\overline{x_{0}}\in\mathbb{R}^{d}$
+\end_inset
+
+ בעלת כל הנגזרות החלקיות מסדר 
+\begin_inset Formula $1,2,...,m+1$
+\end_inset
+
+ והן רציפות.
+ תהי 
+\begin_inset Formula $\overline{\Delta x}=(\Delta x_{1},...,\Delta x_{d})$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\Vert\overline{\Delta x}\Vert<\epsilon$
+\end_inset
+
+, אזי קיים 
+\begin_inset Formula $\theta\in(0,1)$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+f(\overline{x_{0}}+\overline{\Delta x})=f(\overline{x_{0}})+\sum_{n=1}^{m}\frac{1}{n!}\sum_{\substack{k_{1},...,k_{d}\ge0\\
+k_{1}+...+k_{d}=n
+}
+}\frac{n!}{k_{1}!k_{2}!\cdots k_{d}!}\cdot\frac{\partial^{n}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}(\overline{x_{0}})\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}+R
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+R=\frac{1}{(m+1)!}\sum_{\substack{k_{1},...,k_{d}\ge0\\
+k_{1}+...+k_{d}=m+1
+}
+}\frac{(m+1)!}{k_{1}!k_{2}!\cdots k_{d}!}\cdot\frac{\partial^{m+1}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}(\overline{x_{0}}+\theta\overline{\Delta x})\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה 
+\end_layout
+
+\begin_layout Standard
+נגדיר פונקציה 
+\begin_inset Formula $F(t)=f(\overline{x_{0}}+t\overline{\Delta x})$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $\Vert\overline{\Delta x}\Vert<\epsilon$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $F$
+\end_inset
+
+ מוגדרת ב- 
+\begin_inset Formula $(-T,T)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $T=\frac{\epsilon}{\Vert\overline{\Delta x}\Vert}>1$
+\end_inset
+
+, ונוכיח:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F$
+\end_inset
+
+ גזירה ברציפות 
+\begin_inset Formula $m+1$
+\end_inset
+
+ פעמים ב- 
+\begin_inset Formula $(-T,T)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\overline{x}=\overline{x_{0}}+t\overline{\Delta x}$
+\end_inset
+
+, 
+\begin_inset Formula $F^{(n)}(t)=f_{n}(\overline{x})$
+\end_inset
+
+ ו-
+\begin_inset Formula 
+\[
+f_{n+1}(\overline{x})=\sum_{i=1}^{d}\frac{\partial f_{n}}{\partial x_{i}}(\overline{x})\Delta x_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f_{n}(\overline{x})=\sum_{\substack{k_{1},...,k_{d}\ge0\\
+k_{1}+...+k_{d}=n\\
+\\
+}
+}\frac{n!}{k_{1}!k_{2}!\cdots k_{d}!}\cdot\frac{\partial^{n}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}(\overline{x})\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים
+\begin_inset Formula 
+\[
+F'(t)=\frac{d}{dt}f(\overline{x_{0}}+t\overline{\Delta x})\overset{}{=}\frac{d}{dt}f(x_{1}^{0}+t\Delta x_{1},x_{2}^{0}+t\Delta x_{2},...,x_{d}^{0}+t\Delta x_{d})=\sum_{i=1}^{d}\frac{\partial f}{\partial x_{i}}(\overline{x})\Delta x_{i}=f_{1}(\overline{x})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F''(t)=\frac{d}{dt}f_{1}(\overline{x_{0}}+t\overline{\Delta x})=\sum_{i=1}^{d}\frac{\partial f_{1}}{\partial x_{i}}(\overline{x})\Delta x_{i}=\sum_{i=1}^{d}\Delta x_{i}\frac{\partial}{\partial x_{i}}(\sum_{i_{2}=1}^{d}\frac{\partial f}{\partial x_{i_{2}}}(\overline{x})\Delta x_{i_{2}})=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{i_{1},i_{2}=1}^{d}\Delta x_{i_{1}}\Delta x_{i_{2}}\frac{\partial^{2}f}{\partial x_{i_{2}}\partial x_{i_{1}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n=0$
+\end_inset
+
+ נכון.
+ אם נכון עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ אזי 
+\begin_inset Formula 
+\[
+F^{(n+1)}(t)=\frac{d}{dt}f_{n}(\overline{x_{0}}+t\overline{\Delta x})=\sum_{i=1}^{n}f_{n}(\overline{x})\Delta x_{i}=f_{n+1}(\overline{x})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{1}(\overline{x})=\sum_{i_{1}=1}^{d}\frac{\partial f}{\partial x_{i}}(\overline{x})\Delta x_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{2}(\overline{x})=\sum_{i_{1}=1}^{d}\Delta x_{i_{1}}\frac{\partial}{\partial x_{i_{1}}}(\sum_{i_{2}=1}^{d}\frac{\partial f}{\partial x_{i_{2}}}(\overline{x})\Delta x_{i_{2}})=\sum_{i_{1},i_{2}=1}^{d}\Delta x_{i_{1}}\Delta x_{i_{2}}\frac{\partial^{2}f}{\partial x_{i_{2}}\partial x_{i_{1}}}(\overline{x})=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overset{\star}{=}\sum_{\substack{k_{1},...,k_{d}\\
+k_{i}\ge0
+}
+}\frac{2!}{k_{1}!...k_{d}!}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{2}f}{\partial x_{1}^{k_{1}}\cdots\partial x_{d}^{k_{d}}}
+\]
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\star$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula 
+\[
+(a_{1}+\cdots+a_{d})^{2}=\sum_{i_{1},i_{2}=1}^{d}a_{i_{1}}a_{i_{2}}=\sum_{\substack{(k_{1},\cdots k_{d})\\
+k_{i}\ge0\\
+\sum k_{i}=2
+}
+}\frac{2!}{k_{1}!\cdots k_{d}!}a_{1}^{k_{1}}\cdots a_{d}^{k_{d}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לפי 
+\begin_inset Formula $(1)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+f_{n}(\overline{x})=\sum_{1\le i_{1},...,i_{n}\le d}\Delta x_{i_{1}}\frac{\partial}{\partial x_{i_{1}}}(\Delta x_{i_{2}}\frac{\partial}{\partial x_{i_{2}}}(...\Delta x_{i_{n-1}}\frac{\partial}{\partial x_{i_{n-1}}}(\Delta x_{i_{n}}\frac{\partial}{\partial x_{i_{n}}}f)...))=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{1\le i_{1},...,i_{n}\le d}\Delta x_{i_{1}}\cdots\Delta x_{i_{d}}\frac{\partial^{n}f}{\partial x_{i_{n}}\cdots\partial x_{i_{1}}}(\overline{x})
+\]
+
+\end_inset
+
+ נשווה עם
+\begin_inset Formula 
+\[
+(a_{1}+...+a_{d})^{n}=\sum_{1\le i_{1},...,i_{n}\le d}a_{i_{1}}\cdots a_{i_{n}}
+\]
+
+\end_inset
+
+ שני איברים 
+\begin_inset Formula $a_{i_{1}},...,a_{i_{n}}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{j_{1}},...,a_{j_{n}}$
+\end_inset
+
+ שווים אם ורק אם 
+\begin_inset Formula 
+\[
+\Delta x_{i_{1}}\cdots\Delta x_{i_{n}}\frac{\partial^{n}f}{\partial x_{i_{n}}\cdots\partial x_{i_{1}}}=\Delta x_{j_{1}}\cdots\Delta x_{j_{n}}\frac{\partial^{n}f}{\partial x_{j_{n}}\cdots\partial x_{j_{1}}}
+\]
+
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+f_{n}(\overline{x})=\sum_{\substack{(k_{1},\cdots k_{d})\\
+k_{1}+...+k_{d}=n\\
+k_{i}\ge0
+}
+}\frac{n!}{k_{1}!\cdots k_{d}!}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{n}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון ש- 
+\begin_inset Formula $F$
+\end_inset
+
+ גזירה ברציפות 
+\begin_inset Formula $m+1$
+\end_inset
+
+ פעמים ב- 
+\begin_inset Formula $(-T,T)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $T>0$
+\end_inset
+
+, עבור 
+\begin_inset Formula $t=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+F(1)=F(0)+\sum_{n=1}^{m}\frac{F^{(n)}(0)}{n!}1^{n}+\frac{1}{(m+1)!}F^{(m+1)}(\theta)
+\]
+
+\end_inset
+
+ עבור 
+\begin_inset Formula $\theta\in(0,1)$
+\end_inset
+
+.
+ בעזרת 
+\begin_inset Formula $(2)$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\[
+f(\overline{x_{0}}+\overline{\Delta x})=f(\overline{x_{0}})+\sum_{n=1}^{m}\frac{1}{n!}\sum_{\substack{(k_{1},...,k_{d})\\
+k_{1}+...+k_{d}=n
+}
+}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{n}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}(\overline{x_{0}})+
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
++\frac{1}{(m+1)!}\sum_{\substack{(k_{1},...,k_{d})\\
+k_{1}+...+k_{d}=m+1
+}
+}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{m+1}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}(\overline{x_{0}}+\theta\overline{\Delta x})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תנאים על נגזרות מסדר ראשון ושני עבור מינימום ומקסימום
+\end_layout
+
+\begin_layout Paragraph
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $l_{f}$
+\end_inset
+
+ חיובית לחלוטין אזי 
+\begin_inset Formula $\overline{x_{0}}$
+\end_inset
+
+ נקודת מינימום.
+ ואם 
+\begin_inset Formula $l_{f}$
+\end_inset
+
+ שלילית לחלוטין אזי 
+\begin_inset Formula $\overline{x_{0}}$
+\end_inset
+
+ נקודת מקסימום.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ראינו כי עבור 
+\begin_inset Formula $\overline{\Delta x}$
+\end_inset
+
+ עם 
+\begin_inset Formula $\Vert\overline{\Delta x}\Vert$
+\end_inset
+
+ קטן מתקיים:
+\begin_inset Formula 
+\[
+f(\overline{x_{0}}+\overline{\Delta x})-f(\overline{x_{0}})=\frac{1}{2}l_{f}(\overline{\Delta x})+\frac{1}{2}R(\overline{\Delta x})
+\]
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula 
+\[
+R(\overline{\Delta x})=\sum_{i=1}^{d}\alpha_{ii}(\overline{\Delta x})\Delta x_{i}^{2}+2\sum_{1\le i<j\le\alpha}\alpha_{ij}(\overline{\Delta x})\Delta x_{i}\Delta x_{j}
+\]
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\forall i,j\ \alpha_{ij}(\overline{\Delta x})\xrightarrow[\overline{\Delta x}\rightarrow0]{}0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נניח ש- 
+\begin_inset Formula $l_{f}$
+\end_inset
+
+ חיובית לחלוטין, 
+\begin_inset Formula $\overline{\Delta x}\ne0$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $S^{d-1}\ni\overline{t}=\frac{\overline{\Delta x}}{\Vert\overline{\Delta x}\Vert}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+l_{f}(\overline{\Delta x})=l_{f}(\Vert\overline{\Delta x}\Vert\overline{t})=\Vert\overline{\Delta x}\Vert^{2}l_{f}(\overline{t})\ge M\Vert\overline{\Delta x}\Vert^{2}
+\]
+
+\end_inset
+
+ עבור 
+\begin_inset Formula $M>0$
+\end_inset
+
+ וכל 
+\begin_inset Formula $\overline{\Delta x}\ne0$
+\end_inset
+
+.
+ מצד שני, מכיוון ש- 
+\begin_inset Formula $\alpha_{ij}(\overline{\Delta x})\xrightarrow[\overline{\Delta x}\rightarrow0]{}0$
+\end_inset
+
+, לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $i,j$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\Vert\overline{\Delta x}\Vert<\delta\implies|\alpha_{ij}(\overline{\Delta x})|<\epsilon$
+\end_inset
+
+ ולכן-
+\begin_inset Formula 
+\[
+|R(\overline{\Delta x})|\le\sum_{i=1}^{d}|\alpha_{ii}(\overline{\Delta x})|\Delta x_{i}^{2}+2\sum_{1\le i<j\le d}|\alpha_{ij}(\overline{\Delta x})||\Delta x_{i}||\Delta x_{j}|<
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+<\epsilon(\sum_{i=1}^{d}\Delta x_{i}^{2}+2\sum_{1\le i<j\le d}|\Delta x_{i}||\Delta x_{j}|)=\epsilon(\sum_{i=1}^{d}|\Delta x_{i}|)^{2}\le\epsilon\sum_{i=1}^{d}1^{2}\sum_{i=1}^{d}|\Delta x_{i}|^{2}=\epsilon d\Vert\overline{\Delta x}\Vert^{2}
+\]
+
+\end_inset
+
+ נבחר 
+\begin_inset Formula $\epsilon=\frac{M}{2d}$
+\end_inset
+
+ ונקבל כי קיים 
+\begin_inset Formula $\delta_{0}>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $\Vert\overline{\Delta x}\Vert<\delta_{0}$
+\end_inset
+
+ יתקיים
+\begin_inset Formula 
+\[
+f(\overline{x_{0}}+\overline{\Delta x})-f(\overline{x_{0}})=\frac{1}{2}(l_{f}(\overline{\Delta x})+R(\overline{\Delta x}))\ge\frac{1}{2}(M\Vert\overline{\Delta x}\Vert^{2}-\frac{M}{2d}d\Vert\overline{\Delta x}\Vert^{2})>0
+\]
+
+\end_inset
+
+ לכל 
+\begin_inset Formula $0<\Vert\overline{\Delta x}\Vert<\delta$
+\end_inset
+
+ אז 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ נקודת מינימום.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $l_{f}$
+\end_inset
+
+ שלילית לחלוטין מחליפים 
+\begin_inset Formula $f$
+\end_inset
+
+ ב- 
+\begin_inset Formula $(-f)$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
