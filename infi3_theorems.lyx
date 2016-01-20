@@ -155,11 +155,19 @@
 \begin_inset Newline newline
 \end_inset
 
-תהי 
+נוכיח כי אם 
+\begin_inset Formula $K\subset X$
+\end_inset
+
+ קב' קומפקטית אזי 
+\begin_inset Formula $K$
+\end_inset
+
+ חסומה וסגורה ואז בפרט 
 \begin_inset Formula $K\subset(\mathbb{R}^{d},\Vert\cdot\Vert_{p})$
 \end_inset
 
- קומפקטית.
+ תקיים זאת.
  
 \begin_inset Newline newline
 \end_inset
@@ -181,27 +189,32 @@
 \end_inset
 
 , כלומר, קיימת סדרה 
-\begin_inset Formula $\{x_{m}\}\subset K$
+\begin_inset Formula $(x_{n})\subset K$
 \end_inset
 
  כך ש- 
-\begin_inset Formula $\rho(a,x_{m})>n$
+\begin_inset Formula $\rho(a,x_{n})>n$
 \end_inset
 
 .
  הסדרה 
-\begin_inset Formula $x_{m}$
+\begin_inset Formula $x_{n}$
 \end_inset
 
- לא מכילה תת סדרה מתכנסת כי כל סדרה כזו לא חסומה )אם 
-\begin_inset Formula $x_{m}\rightarrow x$
+ לא מכילה תת סדרה מתכנסת כי היא לא חסומה.
+ אם 
+\begin_inset Formula $x_{n_{k}}\rightarrow x$
 \end_inset
 
  אזי 
-\begin_inset Formula $\rho(a,x_{m})\le\rho(a,x)+\rho(x,x_{m})\rightarrow\rho(a,x)$
+\begin_inset Formula $\rho(a,x_{n_{k}})\le\rho(a,x)+\rho(x,x_{n_{k}})\rightarrow\rho(a,x)$
 \end_inset
 
-(, סתירה לקומפקטיות.
+(, וזו סתירה לכך ש- 
+\begin_inset Formula $\rho(a,x_{n})>n$
+\end_inset
+
+.
 \begin_inset Newline newline
 \end_inset
 
@@ -223,7 +236,7 @@
 \end_inset
 
 " קיימת סדרה 
-\begin_inset Formula $\{x_{n}\}\subset K$
+\begin_inset Formula $(x_{n})\subset K$
 \end_inset
 
  כך ש- 
@@ -235,14 +248,14 @@
 \end_inset
 
 , לכן אין תת סדרה של 
-\begin_inset Formula $\{x_{n}\}$
+\begin_inset Formula $(x_{n})$
 \end_inset
 
- המתכנסת לנק' מ-
+ המתכנסת לנק' ב-
 \begin_inset Formula $K$
 \end_inset
 
-, סתירה לקומפקטיות.
+ בסתירה לקומפקטיות.
 \begin_inset Newline newline
 \end_inset
 
@@ -310,7 +323,7 @@
 \begin_inset Formula $x_{2}^{n_{j,2}}\xrightarrow[j\rightarrow\infty]{}x_{2}$
 \end_inset
 
-.
+...
  נתבונן ב-
 \begin_inset Formula $(x_{d}^{n_{j,d-1}})_{j=1}^{\infty}\subset\mathbb{R}$
 \end_inset
@@ -344,8 +357,8 @@
 \begin_inset Formula $i$
 \end_inset
 
-, אזי 
-\begin_inset Formula $x^{n_{j,d}}\rightarrow a=(x_{1},...,x_{d})\in\mathbb{R}^{d}$
+ )הסדרה של כל קואורדינטה מתכנסת(, אזי 
+\begin_inset Formula $x^{n_{j,d}}\xrightarrow[j\rightarrow\infty]{}a=(x_{1},...,x_{d})\in\mathbb{R}^{d}$
 \end_inset
 
 .
@@ -1348,7 +1361,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Formula $r_{n}\xrightarrow[n\rightarrow\infty]{}0$
 \end_inset
 
-, אזי 
+, מתקיים 
 \begin_inset Formula $\bigcap_{n=1}^{\infty}B_{n}\ne\emptyset$
 \end_inset
 
@@ -1376,7 +1389,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Formula $(B_{n})_{n=1}^{\infty}$
 \end_inset
 
- כך ש- 
+ כאשר 
 \begin_inset Formula $B_{n}=\overline{B}(x_{n},r_{n})$
 \end_inset
 
@@ -1427,8 +1440,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Formula $n$
 \end_inset
 
-.
- עבור כל 
+- עבור כל 
 \begin_inset Formula $n$
 \end_inset
 
@@ -1440,7 +1452,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Formula $B_{n}$
 \end_inset
 
-קבוצה סדורה, לכן 
+קבוצה סגורה, לכן 
 \begin_inset Formula $a=\lim_{m\rightarrow\infty,m<n}x_{m}\in B_{n}$
 \end_inset
 
@@ -1486,7 +1498,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 
 .
  קיים 
-\begin_inset Formula $n_{2}>n_{2}$
+\begin_inset Formula $n_{2}>n_{1}$
 \end_inset
 
  כך שלכל 
@@ -1539,6 +1551,22 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Newline newline
 \end_inset
 
+והרדיוס של 
+\begin_inset Formula $B_{k}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\frac{1}{2^{k-1}}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $y\in B_{k}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
 לפי ההנחה, קיימת נק' 
 \begin_inset Formula $a\in\bigcap_{k=1}^{\infty}B_{k}$
 \end_inset
@@ -1587,7 +1615,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 
 \begin_layout Standard
 יהי 
-\begin_inset Formula $X$
+\begin_inset Formula $(X,\rho)$
 \end_inset
 
  מ"מ שלם ו-
@@ -1667,7 +1695,7 @@ y & n=0
 \begin_inset Formula 
 \begin{eqnarray*}
 \rho(y_{m},y_{n}) & = & \rho(Ay_{m-1},Ay_{n-1})\le\alpha\rho(y_{m-1},y_{n-1})\le...\le\alpha^{n}\rho(y_{m-n},y_{0})\le\\
- & \le & \alpha^{n}\sum_{i=0}^{m-n-1}\rho(y_{i},y_{i+1})\le\alpha^{n}\sum_{i=0}^{m-n-1}\alpha^{i}\rho(y_{0},y_{1})\le\alpha^{n}\sum_{i=0}^{\infty}\alpha^{i}\rho(y_{0},y_{1})=\frac{\alpha^{n}}{1-\alpha}\rho(y_{0},y_{1})\xrightarrow[n\rightarrow\infty]{}0
+ & \le & \alpha^{n}\sum_{i=0}^{m-n-1}\rho(y_{i},y_{i+1})\le\alpha^{n}\sum_{i=0}^{m-n-1}\alpha^{i}\rho(y_{0},y_{1})\le\alpha^{n}\rho(y_{0},y_{1})\sum_{i=0}^{\infty}\alpha^{i}=\frac{\alpha^{n}}{1-\alpha}\rho(y_{0},y_{1})\xrightarrow[n\rightarrow\infty]{}0
 \end{eqnarray*}
 
 \end_inset
@@ -1687,7 +1715,7 @@ y & n=0
  ולכן-
 \begin_inset Formula 
 \[
-Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\infty}A(A^{n}y)=\lim_{n\rightarrow\infty}A^{n+1}y=x_{0}
+A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\infty}A(A^{n}y)=\lim_{n\rightarrow\infty}A^{n+1}y=x_{0}
 \]
 
 \end_inset
@@ -1759,7 +1787,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 \end_inset
 
  מתקיים 
-\begin_inset Formula $\sum_{u\in A}(x,u)^{2}\le\Vert x\Vert^{2}$
+\begin_inset Formula $\sum_{u\in A}\langle x,u\rangle^{2}\le\Vert x\Vert^{2}$
 \end_inset
 
 
@@ -1788,7 +1816,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 
 .
  ההטלה 
-\begin_inset Formula $\mathcal{Y}$
+\begin_inset Formula $y$
 \end_inset
 
  של וקטור 
@@ -1800,7 +1828,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 \end_inset
 
  היא 
-\begin_inset Formula $y=\sum_{i=1}^{n}(x,u_{i})u_{i}$
+\begin_inset Formula $y=\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i}$
 \end_inset
 
 .
@@ -1835,8 +1863,8 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
  מתקיים 
 \begin_inset Formula 
 \begin{eqnarray*}
-(x-y,z) & = & (x-\sum_{i=1}^{n}(x,u_{i})u_{i},\sum_{j=1}^{n}\lambda_{j}u_{j})=(x,\sum_{j=1}^{n}\lambda_{j}u_{j})-(\sum_{i=1}^{n}(x,u_{i})u_{i},\sum_{j=1}^{n}\lambda_{j}u_{j})=\\
- & = & \sum_{j=1}^{n}\lambda_{j}(x,u_{j})-\sum_{i=1}^{n}\sum_{j=1}^{n}(x,u_{i})\lambda_{j}(u_{i},u_{j})=\sum_{j=1}^{n}\lambda_{j}(x,u_{j})-\sum_{j=1}^{n}(x,u_{i})\lambda_{j}=0
+\langle x-y,z\rangle & = & \langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},\sum_{j=1}^{n}\lambda_{j}u_{j}\rangle=\langle x,\sum_{j=1}^{n}\lambda_{j}u_{j}\rangle-\langle\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},\sum_{j=1}^{n}\lambda_{j}u_{j}\rangle=\\
+ & = & \sum_{j=1}^{n}\lambda_{j}\langle x,u_{j}\rangle-\sum_{i=1}^{n}\sum_{j=1}^{n}\langle x,u_{i}\rangle\lambda_{j}\langle u_{i},u_{j}\rangle=\sum_{j=1}^{n}\lambda_{j}\langle x,u_{j}\rangle-\sum_{j=1}^{n}\langle x,u_{i}\rangle\lambda_{j}=0
 \end{eqnarray*}
 
 \end_inset
@@ -1903,9 +1931,9 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-\Vert x-\sum_{i=1}^{n}(x,u_{i})u_{i}\Vert^{2} & = & (x-\sum_{i=1}^{n}(x,u_{i})u_{i},x-\sum_{i=1}^{n}(x,u_{i})u_{i})=\\
- & = & (x-\sum_{i=1}^{n}(x,u_{i})u_{i},x)-(x-\sum_{i=1}^{n}(x,u_{i})u_{i},\sum_{i=1}^{n}(x,u_{i})u_{i})\overset{(*)}{=}(x-\sum_{i=1}^{n}(x,u_{i})u_{i},x)=\\
- & = & \Vert x\Vert^{2}-\sum_{i=1}^{n}(x,u_{i})(u_{i},x)=\Vert x\Vert^{2}-\sum_{i=1}^{n}(x,u_{i})^{2}
+\Vert x-\sum_{i=1}^{n}(x,u_{i})u_{i}\Vert^{2} & = & \langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i}\rangle=\\
+ & = & \langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},x\rangle-\langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i}\rangle\overset{(*)}{=}\langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},x\rangle=\\
+ & = & \Vert x\Vert^{2}-\sum_{i=1}^{n}\langle x,u_{i}\rangle\langle u_{i},x\rangle=\Vert x\Vert^{2}-\sum_{i=1}^{n}\langle x,u_{i}\rangle^{2}
 \end{eqnarray*}
 
 \end_inset
@@ -1919,15 +1947,15 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 \end_inset
 
  - 
-\begin_inset Formula $(x-\sum_{i=1}^{n}(x,u_{i})u_{i},\sum_{i=1}^{n}(x,u_{i})u_{i})=0$
+\begin_inset Formula $\langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i}\rangle=0$
 \end_inset
 
  כי 
-\begin_inset Formula $x-\sum_{i=1}^{n}(x,u_{i})u_{i}=x-y$
+\begin_inset Formula $x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i}=x-y$
 \end_inset
 
  ו-
-\begin_inset Formula $\sum_{i=1}^{n}(x,u_{i})u_{i}=y\in M$
+\begin_inset Formula $\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i}=y\in M$
 \end_inset
 
  ומהטענה הם ניצבים.
@@ -1954,21 +1982,19 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 \begin_inset Formula $A=(u_{i})_{i=1}^{n}$
 \end_inset
 
- אזי לפי המסקנה
-\backslash
- עבור כל 
+ אזי לפי המסקנה, עבור כל 
 \begin_inset Formula $n$
 \end_inset
 
  מתקיים 
-\begin_inset Formula $\sum_{i=1}^{n}(x,u_{i})^{2}\le\Vert x\Vert^{2}$
+\begin_inset Formula $\sum_{i=1}^{n}\langle x,u_{i}\rangle^{2}\le\Vert x\Vert^{2}$
 \end_inset
 
- לכן מתקיים 
-\begin_inset Formula $\sum_{i=1}^{\infty}(x,u_{i})^{2}\le\Vert x\Vert^{2}$
+ לכן )במעבר לגבול( מתקיים 
+\begin_inset Formula $\sum_{i=1}^{\infty}\langle x,u_{i}\rangle^{2}\le\Vert x\Vert^{2}$
 \end_inset
 
-.
+ )הטור מונוטוני עולה וחסום(.
 \end_layout
 
 \begin_layout Section
@@ -2020,7 +2046,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
  מתקיים שוויון פרסבל:
 \begin_inset Formula 
 \[
-\Vert x\Vert^{2}=\sum_{i=1}^{\infty}(x,\varphi_{i})^{2}
+\Vert x\Vert^{2}=\sum_{i=1}^{\infty}\langle x,\varphi_{i}\text{\rangle}^{2}
 \]
 
 \end_inset
@@ -2082,7 +2108,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 \end_inset
 
  קיימת הצגה יחידה 
-\begin_inset Formula $x=\sum_{i=1}^{\infty}(x,\varphi_{i})\varphi_{i}$
+\begin_inset Formula $x=\sum_{i=1}^{\infty}\langle x,\varphi_{i}\rangle\varphi_{i}$
 \end_inset
 
 , כלומר, לכל 
@@ -2102,7 +2128,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 \end_inset
 
  מתקיים 
-\begin_inset Formula $\Vert x-\sum_{i=1}^{\infty}(x,\varphi_{i})\varphi_{i}\Vert<\epsilon$
+\begin_inset Formula $\Vert x-\sum_{i=1}^{\infty}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert<\epsilon$
 \end_inset
 
 .
@@ -2116,7 +2142,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
  הוא יחיד, לכן 
 \begin_inset Formula 
 \[
-0=x-x=\sum_{i=1}^{\infty}(\lambda_{i}-(x,\varphi_{i}))\varphi_{i}
+0=x-x=\sum_{i=1}^{\infty}(\lambda_{i}-\langle x,\varphi_{i}\rangle)\varphi_{i}
 \]
 
 \end_inset
@@ -2124,7 +2150,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 
 \begin_inset Formula 
 \[
-0=(0,\varphi_{j})=\sum_{i=1}^{\infty}(\lambda_{i}-(x,\varphi_{i}))(\varphi_{i},\varphi_{j})=\lambda_{j}-(x,\varphi_{j})
+0=\langle0,\varphi_{j}\rangle=\sum_{i=1}^{\infty}(\lambda_{i}-\langle x,\varphi_{i}\rangle)\langle\varphi_{i},\varphi_{j}\rangle=\lambda_{j}-\langle x,\varphi_{j}\rangle
 \]
 
 \end_inset
@@ -2134,7 +2160,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 \end_inset
 
  שלמה לכם קיים 
-\begin_inset Formula $n_{0(\epsilon)_{(}}$
+\begin_inset Formula $n_{0(\epsilon)}$
 \end_inset
 
  ו-
@@ -2149,7 +2175,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
  לפי טענה על ההטלה >>>?<<< מתקיים 
 \begin_inset Formula 
 \[
-\Vert x-\sum_{i=1}^{n_{0}}(x,\varphi_{i})\varphi_{i}\Vert\le\Vert x-\sum_{i=1}^{n_{0}}\lambda_{i}\varphi_{i}\Vert<\epsilon
+\Vert x-\sum_{i=1}^{n_{0}}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert\le\Vert x-\sum_{i=1}^{n_{0}}\lambda_{i}\varphi_{i}\Vert<\epsilon
 \]
 
 \end_inset
@@ -2161,7 +2187,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
  ולפי המסקנה בהוכחה של בסל נקבל כי
 \begin_inset Formula 
 \[
-\Vert x-\sum_{i=1}^{n}(x,\varphi_{i})\varphi_{i}\Vert\le\Vert x-\sum_{i=1}^{n_{0}}(x,\varphi_{i})\varphi_{i}\Vert<\epsilon
+\Vert x-\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert\le\Vert x-\sum_{i=1}^{n_{0}}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert<\epsilon
 \]
 
 \end_inset
@@ -2212,7 +2238,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 לפי המסקנה בהוכחה של בסל נקבל
 \begin_inset Formula 
 \[
-\Vert x-\sum_{i=1}^{n}(x,\varphi_{i})\varphi_{i}\Vert^{2}=\Vert x\Vert^{2}-\sum_{i=1}^{n}(x,\varphi_{i})^{2}
+\Vert x-\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert^{2}=\Vert x\Vert^{2}-\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle^{2}
 \]
 
 \end_inset
@@ -2249,11 +2275,11 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 \noun default
 \color inherit
 נקבל 
-\begin_inset Formula $\lim_{n\rightarrow\infty}\Vert x-\sum_{i=1}^{n}(x,\varphi_{i})\varphi_{i}\Vert=0$
+\begin_inset Formula $\lim_{n\rightarrow\infty}\Vert x-\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert=0$
 \end_inset
 
 , לכן 
-\begin_inset Formula $\Vert x\Vert^{2}=\sum_{i=1}^{n}(x,\varphi_{i})^{2}$
+\begin_inset Formula $\Vert x\Vert^{2}=\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle^{2}$
 \end_inset
 
 
@@ -2304,17 +2330,17 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 \end_inset
 
  יתקיים 
-\begin_inset Formula $\Vert x\Vert^{2}=\sum_{i=1}^{n}(x,\varphi_{i})^{2}$
+\begin_inset Formula $\Vert x\Vert^{2}=\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle^{2}$
 \end_inset
 
  אזי לכל 
 \begin_inset Formula $n$
 \end_inset
 
- 
+ מתקיים 
 \begin_inset Formula 
 \[
-\Vert x-\sum_{i=1}^{n}(x,\varphi_{i})\varphi_{i}\Vert^{2}=\Vert x\Vert^{2}-\sum_{i=1}^{n}(x,\varphi_{i})^{2}\xrightarrow[n\rightarrow\infty]{}0
+\Vert x-\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert^{2}=\Vert x\Vert^{2}-\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle^{2}\xrightarrow[n\rightarrow\infty]{}0
 \]
 
 \end_inset
@@ -2324,7 +2350,7 @@ Ax_{0}=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\inft
 \end_inset
 
 כלומר, 
-\begin_inset Formula $x\in Span(\phi)$
+\begin_inset Formula $x\in span(\phi)$
 \end_inset
 
 .
