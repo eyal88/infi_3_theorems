@@ -207,11 +207,24 @@
 \end_inset
 
  אזי 
-\begin_inset Formula $\rho(a,x_{n_{k}})\le\rho(a,x)+\rho(x,x_{n_{k}})\rightarrow\rho(a,x)$
+\begin_inset Formula 
+\[
+\rho(a,x_{n_{k}})\le\rho(a,x)+\rho(x,x_{n_{k}})\rightarrow\rho(a,x)
+\]
+
 \end_inset
 
-(, וזו סתירה לכך ש- 
+וזו סתירה לכך ש- 
 \begin_inset Formula $\rho(a,x_{n})>n$
+\end_inset
+
+.
+ קיבלנו כי קיימת סדרה ב-
+\begin_inset Formula $K$
+\end_inset
+
+ אשר אין לה תת סדרה מתכנסת, בסתירה לקומפקטיות 
+\begin_inset Formula $K$
 \end_inset
 
 .
@@ -255,7 +268,11 @@
 \begin_inset Formula $K$
 \end_inset
 
- בסתירה לקומפקטיות.
+ בסתירה לקומפקטיות 
+\begin_inset Formula $K$
+\end_inset
+
+.
 \begin_inset Newline newline
 \end_inset
 
@@ -334,7 +351,7 @@
 \end_inset
 
  כך ש-
-\begin_inset Formula $x_{d}^{n_{j,j}}\xrightarrow[j\rightarrow\infty]{}x_{d}$
+\begin_inset Formula $x_{d}^{n_{j,d}}\xrightarrow[j\rightarrow\infty]{}x_{d}$
 \end_inset
 
 .
@@ -1864,7 +1881,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_inset Formula 
 \begin{eqnarray*}
 \langle x-y,z\rangle & = & \langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},\sum_{j=1}^{n}\lambda_{j}u_{j}\rangle=\langle x,\sum_{j=1}^{n}\lambda_{j}u_{j}\rangle-\langle\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},\sum_{j=1}^{n}\lambda_{j}u_{j}\rangle=\\
- & = & \sum_{j=1}^{n}\lambda_{j}\langle x,u_{j}\rangle-\sum_{i=1}^{n}\sum_{j=1}^{n}\langle x,u_{i}\rangle\lambda_{j}\langle u_{i},u_{j}\rangle=\sum_{j=1}^{n}\lambda_{j}\langle x,u_{j}\rangle-\sum_{j=1}^{n}\langle x,u_{i}\rangle\lambda_{j}=0
+ & = & \sum_{j=1}^{n}\lambda_{j}\langle x,u_{j}\rangle-\sum_{i=1}^{n}\sum_{j=1}^{n}\langle x,u_{i}\rangle\lambda_{j}\langle u_{i},u_{j}\rangle=\sum_{j=1}^{n}\lambda_{j}\langle x,u_{j}\rangle-\sum_{j=1}^{n}\langle x,u_{j}\rangle\lambda_{j}=0
 \end{eqnarray*}
 
 \end_inset
@@ -1892,7 +1909,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
  מתקיים 
 \begin_inset Formula 
 \[
-\Vert x-z\Vert^{2}=\Vert(x-y)+(y-)\Vert^{2}\overset{(1)}{=}\Vert x-y\Vert^{2}+\Vert y-z\Vert^{2}\overset{(2)}{\ge}\Vert x-y\Vert^{2}
+\Vert x-z\Vert^{2}=\Vert(x-y)+(y-z)\Vert^{2}\overset{(1)}{=}\Vert x-y\Vert^{2}+\Vert y-z\Vert^{2}\overset{(2)}{\ge}\Vert x-y\Vert^{2}
 \]
 
 \end_inset
@@ -1909,7 +1926,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_inset Formula $x-y\perp y-z$
 \end_inset
 
-
+ )פיתגורס(
 \begin_inset Newline newline
 \end_inset
 
@@ -1919,6 +1936,10 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 
  - 
 \begin_inset Formula $y\ne z$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\Vert y-z\Vert^{2}>0$
 \end_inset
 
 
@@ -1931,7 +1952,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-\Vert x-\sum_{i=1}^{n}(x,u_{i})u_{i}\Vert^{2} & = & \langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i}\rangle=\\
+0\le\Vert x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i}\Vert^{2} & = & \langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i}\rangle=\\
  & = & \langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},x\rangle-\langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i}\rangle\overset{(*)}{=}\langle x-\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i},x\rangle=\\
  & = & \Vert x\Vert^{2}-\sum_{i=1}^{n}\langle x,u_{i}\rangle\langle u_{i},x\rangle=\Vert x\Vert^{2}-\sum_{i=1}^{n}\langle x,u_{i}\rangle^{2}
 \end{eqnarray*}
@@ -1958,7 +1979,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_inset Formula $\sum_{i=1}^{n}\langle x,u_{i}\rangle u_{i}=y\in M$
 \end_inset
 
- ומהטענה הם ניצבים.
+, ומהטענה הם ניצבים.
 \begin_inset Newline newline
 \end_inset
 
@@ -1979,7 +2000,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \end_inset
 
 אם 
-\begin_inset Formula $A=(u_{i})_{i=1}^{n}$
+\begin_inset Formula $A=(u_{i})_{i=1}^{\infty}$
 \end_inset
 
  אזי לפי המסקנה, עבור כל 
@@ -2172,12 +2193,24 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \end_inset
 
 .
- לפי טענה על ההטלה >>>?<<< מתקיים 
+ לפי טענה המופיעה באי שוויון בסל מתקיים 
 \begin_inset Formula 
 \[
 \Vert x-\sum_{i=1}^{n_{0}}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert\le\Vert x-\sum_{i=1}^{n_{0}}\lambda_{i}\varphi_{i}\Vert<\epsilon
 \]
 
+\end_inset
+
+)אי השוויון הראשון חלש מכיוון ש-
+\begin_inset Formula $\sum_{i=1}^{n_{0}}\lambda_{i}\varphi_{i}$
+\end_inset
+
+ יכול להיות שווה ל- 
+\begin_inset Formula $\sum_{i=1}^{n_{0}}\langle x,\varphi_{i}\rangle\varphi_{i}$
+\end_inset
+
+ בגלל שהם באותו מרחב(
+\begin_inset Newline newline
 \end_inset
 
 לכן עבור כל 
@@ -2686,7 +2719,7 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
 
 \begin_inset Formula 
 \[
-=\int_{T}^{a+T}\psi(x)dx-\int_{0}^{a}\psi(x)dx\overset{x=y+T}{=}\int_{0}^{a}\psi(y+t)dy-\int_{0}^{a}\psi(x)dx=0
+=\int_{T}^{a+T}\psi(x)dx-\int_{0}^{a}\psi(x)dx\overset{x=y+T}{=}\int_{0}^{a}\psi(y+T)dy-\int_{0}^{a}\psi(x)dx=0
 \]
 
 \end_inset
@@ -2727,8 +2760,8 @@ f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x
 \end_layout
 
 \begin_layout Itemize
-פונקציה 
-\begin_inset Formula $g(t)=\frac{f(t)-f(x_{0})}{t-x_{0}}$
+הפונקציה 
+\begin_inset Formula $g(t)=\frac{f(x_{0})-f(t)}{x_{0}-t}$
 \end_inset
 
  אינטגרבילית ב- 
@@ -2743,7 +2776,7 @@ f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x
 \begin_inset Formula $(x_{0}-\delta,x_{0}+\delta)$
 \end_inset
 
- לפי תנאי דיני.
+ לפי תנאי המשפט.
  עבור 
 \begin_inset Formula $x\in(0,2\pi)\backslash(x_{0}-\delta,x_{0}+\delta)$
 \end_inset
@@ -2757,7 +2790,7 @@ f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x
 \end_layout
 
 \begin_layout Itemize
-פונקציה 
+הפונקציה 
 \begin_inset Formula $\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}$
 \end_inset
 
@@ -2801,7 +2834,7 @@ f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x
  רציפה ולכן
 \begin_inset Formula 
 \[
-H[0,2\pi]\ni\frac{f(t)-f(x_{0})}{t-x_{0}}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}=\varphi(t)
+H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}=\varphi(t)
 \]
 
 \end_inset
