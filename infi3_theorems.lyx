@@ -654,16 +654,12 @@ X\backslash\bigcap_{i=1}^{m}F_{\alpha_{i}}=\bigcup_{i=1}^{m}(X\backslash F_{\alp
 , נגדיר קבוצה 
 \begin_inset Formula 
 \[
-L_{n}(x_{n},x_{n+1},...)\subset X
+L_{n}=\{x_{m}\ |\ m\ge n\}\subset X
 \]
 
 \end_inset
 
-
-\begin_inset Newline newline
-\end_inset
-
-מכיוון ש- 
+ מכיוון ש- 
 \begin_inset Formula $L_{n+1}\subset L_{n}$
 \end_inset
 
@@ -730,7 +726,7 @@ L_{n}(x_{n},x_{n+1},...)\subset X
 \end_inset
 
 .
- עבור על 
+ עבור כל 
 \begin_inset Formula $n$
 \end_inset
 
@@ -750,17 +746,21 @@ L_{n}(x_{n},x_{n+1},...)\subset X
 \begin_inset Formula $L_{n}$
 \end_inset
 
-.
- ולכן קיים 
-\begin_inset Formula $x_{n_{1}}\subset L_{1}$
+ לכל 
+\begin_inset Formula $n$
 \end_inset
 
- כך ש-
+.
+ ולכן קיים 
+\begin_inset Formula $x_{n_{1}}\in L_{1}$
+\end_inset
+
+ כך ש- 
 \begin_inset Formula $\rho(a,x_{n_{1}})<\frac{1}{1}$
 \end_inset
 
 , קיים 
-\begin_inset Formula $n_{2}>n_{1},\ x_{n_{2}}$
+\begin_inset Formula $n_{2}>n_{1},\ x_{n_{2}}\in L_{2}$
 \end_inset
 
  כך ש-
@@ -985,7 +985,7 @@ L_{n}(x_{n},x_{n+1},...)\subset X
 \begin_inset Formula $k_{0}$
 \end_inset
 
-כך ש- 
+ כך ש- 
 \begin_inset Formula $B(x_{n_{k_{0}}},\frac{1}{n_{k_{0}}})\subset B(a,\rho)$
 \end_inset
 
@@ -1345,11 +1345,11 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Formula $B_{n+1}\subset B_{n}$
 \end_inset
 
- עבור 
-\begin_inset Formula $n=1,2,...$
+ לכל 
+\begin_inset Formula $n$
 \end_inset
 
- ורדיוס 
+, ורדיוס 
 \begin_inset Formula $r_{n}$
 \end_inset
 
