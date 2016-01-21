@@ -1337,11 +1337,11 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Formula $\iff$
 \end_inset
 
- לכל סדרה 
+ כל סדרה 
 \begin_inset Formula $(B_{n})_{n=1}^{\infty}$
 \end_inset
 
- של כדורים סגורים, אם 
+ של כדורים סגורים, כך ש- 
 \begin_inset Formula $B_{n+1}\subset B_{n}$
 \end_inset
 
@@ -1349,7 +1349,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Formula $n$
 \end_inset
 
-, ורדיוס 
+ ורדיוס 
 \begin_inset Formula $r_{n}$
 \end_inset
 
@@ -1361,7 +1361,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Formula $r_{n}\xrightarrow[n\rightarrow\infty]{}0$
 \end_inset
 
-, מתקיים 
+, מקיימת 
 \begin_inset Formula $\bigcap_{n=1}^{\infty}B_{n}\ne\emptyset$
 \end_inset
 
