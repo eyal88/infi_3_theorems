@@ -1474,7 +1474,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \end_inset
 
  קבוצה סגורה, לכן 
-\begin_inset Formula $a=\lim_{m\rightarrow\infty,m<n}x_{m}\in B_{n}$
+\begin_inset Formula $a=\lim_{m\rightarrow\infty,m>n}x_{m}\in B_{n}$
 \end_inset
 
 .
@@ -2859,7 +2859,7 @@ f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x
 \end_inset
 
  מתקיים 
-\begin_inset Formula $|g(n)|\le\frac{1}{\delta}|f(t)-f(x_{0})|$
+\begin_inset Formula $|g(t)|\le\frac{1}{\delta}|f(t)-f(x_{0})|$
 \end_inset
 
 .
@@ -3197,7 +3197,15 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \begin_inset Formula $\{\sigma_{n}(x)\}_{n=1}^{\infty}$
 \end_inset
 
- מתכנסים ל- 
+ 
+\begin_inset Formula 
+\[
+\sigma_{n}(x)=\frac{1}{n}\sum_{k=0}^{n-1}\mathscr{S}_{k}^{f}(x)=\frac{1}{2\pi}\int_{0}^{2\pi}f(t)K_{n}(x-t)dt
+\]
+
+\end_inset
+
+מתכנסים ל- 
 \begin_inset Formula $f$
 \end_inset
 
@@ -3233,10 +3241,10 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 :
 \begin_inset Formula 
 \begin{eqnarray*}
-\sigma_{n}(x)-f(x) & \overset{(1)}{=} & \frac{1}{2\pi}\int_{0}^{2\pi}f(t)k_{n}(x-t)dt-\frac{1}{2\pi}\int_{0}^{2\pi}f(x)k_{n}(x-t)dt\\
- & \overset{}{=} & \frac{1}{2\pi}\int_{0}^{2\pi}(f(t)-f(x))k_{n}(x-t)dt\\
- & \overset{(2)}{=} & \frac{1}{2\pi}\int_{-x}^{2\pi-x}(f(x+\tau)-f(x))k_{n}(\tau)d\tau\\
- & \overset{}{=} & \frac{1}{2\pi}\int_{-\pi}^{\pi}(f(x+\tau)-f(x))k_{n}(\tau)d\tau
+\sigma_{n}(x)-f(x) & \overset{(1)}{=} & \frac{1}{2\pi}\int_{0}^{2\pi}f(t)K_{n}(x-t)dt-\frac{1}{2\pi}\int_{0}^{2\pi}f(x)K_{n}(x-t)dt\\
+ & \overset{}{=} & \frac{1}{2\pi}\int_{0}^{2\pi}(f(t)-f(x))K_{n}(x-t)dt\\
+ & \overset{(2)}{=} & \frac{1}{2\pi}\int_{-x}^{2\pi-x}(f(x+\tau)-f(x))K_{n}(\tau)d\tau\\
+ & \overset{(3)}{=} & \frac{1}{2\pi}\int_{-\pi}^{\pi}(f(x+\tau)-f(x))K_{n}(\tau)d\tau
 \end{eqnarray*}
 
 \end_inset
@@ -3271,7 +3279,34 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \noun default
 \color inherit
 2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
 \numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של גרעין 
+\begin_inset Formula $Fejer$
+\end_inset
+
 .
  נסמן 
 \begin_inset Formula $\tau=x-t$
@@ -3282,11 +3317,20 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \end_inset
 
  מתקיים כי 
-\begin_inset Formula $k_{n}$
+\begin_inset Formula $K_{n}$
 \end_inset
 
  זוגית ולכן 
-\begin_inset Formula $k_{n}(t-x)=k_{n}(x-t)=k_{n}(\tau)$
+\begin_inset Formula $K_{n}(t-x)=K_{n}(x-t)=K_{n}(\tau)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $(3)$
+\end_inset
+
+ נובע ממחזוריות 
+\begin_inset Formula $f$
 \end_inset
 
 .
@@ -3328,9 +3372,13 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \begin_inset Formula $\mathbb{R}$
 \end_inset
 
- ולכן חסומה ורציפה במידה שווה.
+ ולכן חסומה ורציפה במידה שווה ב- 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
  יהא 
-\begin_inset Formula $M>0$
+\begin_inset Formula $0<M\in\mathbb{R}$
 \end_inset
 
  כך ש- 
@@ -3346,18 +3394,19 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \end_inset
 
 .
- קיים 
+ מרציפות במ"ש קיים 
 \begin_inset Formula $\delta>0$
 \end_inset
 
  כך ש- 
-\begin_inset Formula $|x_{1}-x_{2}|<\delta\implies|f(x_{1})-f(x_{2})|<\epsilon$
+\begin_inset Formula $(*)\ \ |x_{1}-x_{2}|<\delta\implies|f(x_{1})-f(x_{2})|<\epsilon$
 \end_inset
 
- 
+.
+ מתקיים- 
 \begin_inset Formula 
 \[
-|\sigma_{n}(x)-f(x)|=|\frac{1}{2\pi}\int_{-\pi}^{-\delta}+\frac{1}{2\pi}\int_{-\delta}^{\delta}+\frac{1}{2\pi}\int_{\delta}^{\pi}|
+|\sigma_{n}(x)-f(x)|=|\frac{1}{2\pi}\int_{-\pi}^{-\delta}(f(x+\tau)-f(x))K_{n}(\tau)d\tau+\frac{1}{2\pi}\int_{-\delta}^{\delta}(f(x+\tau)-f(x))K_{n}(\tau)d\tau+\frac{1}{2\pi}\int_{\delta}^{\pi}(f(x+\tau)-f(x))K_{n}(\tau)d\tau|
 \]
 
 \end_inset
@@ -3368,7 +3417,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-|\frac{1}{2\pi}\int_{-\delta}^{\delta}[f(x+\tau)-f(x)]k_{n}(\tau)d\tau|\le\frac{1}{2\pi}\int_{-\delta}^{\delta}|f(x-\tau)-f(x)|k_{n}(\tau)d\tau\le
+|\frac{1}{2\pi}\int_{-\delta}^{\delta}(f(x+\tau)-f(x))K_{n}(\tau)d\tau|\le\frac{1}{2\pi}\int_{-\delta}^{\delta}|f(x-\tau)-f(x)|K_{n}(\tau)d\tau\le
 \]
 
 \end_inset
@@ -3376,7 +3425,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 
 \begin_inset Formula 
 \[
-\overset{(1)}{\le}\epsilon\frac{1}{2\pi}\int_{-\pi}^{\pi}k_{n}(\tau)d\tau\overset{(2)}{=}\epsilon
+\overset{(1)}{\le}\epsilon\frac{1}{2\pi}\int_{-\pi}^{\pi}K_{n}(\tau)d\tau\overset{(2)}{=}\epsilon
 \]
 
 \end_inset
@@ -3385,7 +3434,11 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \begin_inset Formula $(1)$
 \end_inset
 
- מתקיים כי הגדלנו את טווח האינטגרל.
+ מתקיים מ- 
+\begin_inset Formula $(*)$
+\end_inset
+
+ וכי הגדלנו את טווח האינטגרל.
  
 \begin_inset Formula $(2)$
 \end_inset
@@ -3394,13 +3447,17 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \begin_inset Formula $2$
 \end_inset
 
+ של גרעין 
+\begin_inset Formula $Fejer$
+\end_inset
+
 .
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-|\frac{1}{2\pi}\int_{-\pi}^{-\delta}[f(x+\tau)-f(x)]k_{n}(\tau)d\tau+\frac{1}{2\pi}\int_{\delta}^{\pi}[f(x+\tau)-f(x)]k_{n}(\tau)d\tau|\le
+|\frac{1}{2\pi}\int_{-\pi}^{-\delta}(f(x+\tau)-f(x))K_{n}(\tau)d\tau+\frac{1}{2\pi}\int_{\delta}^{\pi}(f(x+\tau)-f(x))K_{n}(\tau)d\tau|\le
 \]
 
 \end_inset
@@ -3408,7 +3465,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 
 \begin_inset Formula 
 \[
-\le\frac{1}{2\pi}\int_{-\pi}^{-\delta}|f(x+\tau)-f(x)|k_{n}d\tau+\frac{1}{2\pi}\int_{\delta}^{\pi}|f(x+\tau)-f(x)|k_{n}d\tau\le
+\le\frac{1}{2\pi}\int_{-\pi}^{-\delta}|f(x+\tau)-f(x)|K_{n}(\tau)d\tau+\frac{1}{2\pi}\int_{\delta}^{\pi}|f(x+\tau)-f(x)|K_{n}(\tau)d\tau\le
 \]
 
 \end_inset
@@ -3416,7 +3473,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 
 \begin_inset Formula 
 \[
-\le2M\frac{1}{2\pi}[\int_{-\pi}^{-\delta}k_{n}(\tau)d\tau+\int_{\delta}^{\pi}k_{n}(\tau)d\tau]\overset{(1)}{=}\frac{2M}{2\pi}[\int_{\delta}^{\pi}k_{n}(\tau)d\tau+\int_{\pi}^{2\pi-\delta}k_{n}(t')dt']=
+\le2M\frac{1}{2\pi}[\int_{-\pi}^{-\delta}K_{n}(\tau)d\tau+\int_{\delta}^{\pi}K_{n}(\tau)d\tau]\overset{(1)}{=}\frac{2M}{2\pi}[\int_{\delta}^{\pi}K_{n}(\tau)d\tau+\int_{\pi}^{2\pi-\delta}K_{n}(t')dt']=
 \]
 
 \end_inset
@@ -3424,7 +3481,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 
 \begin_inset Formula 
 \[
-=\frac{2M}{2\pi}\int_{\delta}^{2\pi-\delta}k_{n}(\tau)d\tau\overset{(2)}{<}\epsilon
+=\frac{2M}{2\pi}\int_{\delta}^{2\pi-\delta}K_{n}(\tau)d\tau\overset{(2)}{<}\epsilon
 \]
 
 \end_inset
@@ -3475,18 +3532,22 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \color inherit
 3
 \numeric off
+ של גרעין 
+\begin_inset Formula $Fejer$
+\end_inset
+
  קיים 
 \begin_inset Formula $n_{0}$
 \end_inset
 
  כך שלכל 
-\begin_inset Formula $n>n_{0}$
+\begin_inset Formula $n\ge n_{0}$
 \end_inset
 
  מתקיים
 \begin_inset Formula 
 \[
-\frac{1}{2\pi}\int_{\delta}^{2\pi-\delta}k_{n}(\tau)d\tau<\frac{\epsilon}{2M}
+\frac{1}{2\pi}\int_{\delta}^{2\pi-\delta}K_{n}(\tau)d\tau<\frac{\epsilon}{2M}
 \]
 
 \end_inset
@@ -3500,7 +3561,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \end_inset
 
  כך שלכל 
-\begin_inset Formula $n>n_{0}$
+\begin_inset Formula $n\ge n_{0}$
 \end_inset
 
  ולכל 
