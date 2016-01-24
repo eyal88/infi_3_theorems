@@ -416,7 +416,7 @@
 \end_layout
 
 \begin_layout Enumerate
-כל כסוי פתוח של 
+כל כיסוי פתוח של 
 \begin_inset Formula $X$
 \end_inset
 
@@ -486,7 +486,7 @@
 מחוקי דה-מורגן נקבל כי 
 \begin_inset Formula 
 \[
-X\backslash\bigcup_{\alpha}E_{\alpha}=\bigcap_{\alpha}(X\backslash E_{\alpha}),\ X\backslash\bigcap_{\alpha}F_{\alpha}=\bigcup_{\alpha}(X\backslash F_{\alpha})
+X\backslash\bigcup_{\alpha}F_{\alpha}=\bigcap_{\alpha}(X\backslash F_{\alpha}),\ X\backslash\bigcap_{\alpha}F_{\alpha}=\bigcup_{\alpha}(X\backslash F_{\alpha})
 \]
 
 \end_inset
@@ -556,7 +556,7 @@ X\backslash\bigcup_{\alpha}E_{\alpha}=\bigcap_{\alpha}(X\backslash E_{\alpha}),\
 \uwave default
 \noun default
 \color inherit
-הוא מכיל כיסוי סופי, כלומר קיימים 
+הוא מכיל תת כיסוי סופי, כלומר קיימים 
 \begin_inset Formula $\alpha_{1},...,\alpha_{m}$
 \end_inset
 
@@ -801,7 +801,7 @@ L_{n}=\{x_{m}\ |\ m\ge n\}\subset X
 \end_inset
 
 , מתקיים 
-\begin_inset Formula $\rho(a,x_{n_{k}})\rightarrow0$
+\begin_inset Formula $\rho(a,x_{n_{k}})\xrightarrow[k\rightarrow\infty]{}0$
 \end_inset
 
 , לכן 
@@ -942,7 +942,7 @@ L_{n}=\{x_{m}\ |\ m\ge n\}\subset X
 \begin_inset Formula $x_{n}$
 \end_inset
 
-כך ש- 
+ כך ש- 
 \begin_inset Formula $B(x_{n},\frac{1}{n})$
 \end_inset
 
@@ -982,11 +982,11 @@ L_{n}=\{x_{m}\ |\ m\ge n\}\subset X
 \end_inset
 
  קבוצה פתוחה )כי זהו כיסוי פתוח(, לכן קיים 
-\begin_inset Formula $\rho>0$
+\begin_inset Formula $r>0$
 \end_inset
 
  כך ש- 
-\begin_inset Formula $B(a,\rho)\subset E_{\alpha_{0}}$
+\begin_inset Formula $B(a,r)\subset E_{\alpha_{0}}$
 \end_inset
 
 .
@@ -1003,12 +1003,12 @@ L_{n}=\{x_{m}\ |\ m\ge n\}\subset X
 \end_inset
 
  כך ש- 
-\begin_inset Formula $B(x_{n_{k_{0}}},\frac{1}{n_{k_{0}}})\subset B(a,\rho)$
+\begin_inset Formula $B(x_{n_{k_{0}}},\frac{1}{n_{k_{0}}})\subset B(a,r)$
 \end_inset
 
 .
  אבל 
-\begin_inset Formula $B(a,\rho)\subset E_{\alpha_{0}}$
+\begin_inset Formula $B(a,r)\subset E_{\alpha_{0}}$
 \end_inset
 
 , ולכן 
@@ -1102,10 +1102,14 @@ L_{n}=\{x_{m}\ |\ m\ge n\}\subset X
 
 (.
  אם 
-\begin_inset Formula $B(x_{1},\epsilon)\cup C(x_{2},\epsilon)=X$
+\begin_inset Formula 
+\[
+B(x_{1},\epsilon)\cup B(x_{2},\epsilon)=X
+\]
+
 \end_inset
 
- סיימנו, אחרת, קיימת 
+סיימנו, אחרת, קיימת 
 \begin_inset Formula $x_{3}\in X$
 \end_inset
 
@@ -1313,7 +1317,7 @@ L_{n}=\{x_{m}\ |\ m\ge n\}\subset X
 \end_inset
 
  כך ש- 
-\begin_inset Formula $B(x_{1},\epsilon)\subset E_{\alpha_{i}}$
+\begin_inset Formula $B(x_{i},\epsilon)\subset E_{\alpha_{i}}$
 \end_inset
 
 , מתקיים 
@@ -1457,7 +1461,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Formula $n$
 \end_inset
 
-- עבור כל 
+ - עבור כל 
 \begin_inset Formula $n$
 \end_inset
 
@@ -1469,7 +1473,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Formula $B_{n}$
 \end_inset
 
-קבוצה סגורה, לכן 
+ קבוצה סגורה, לכן 
 \begin_inset Formula $a=\lim_{m\rightarrow\infty,m<n}x_{m}\in B_{n}$
 \end_inset
 
@@ -1584,7 +1588,11 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Newline newline
 \end_inset
 
-לפי ההנחה, קיימת נק' 
+
+\begin_inset Formula $\frac{1}{2^{k-1}}\xrightarrow[k\rightarrow\infty]{}0$
+\end_inset
+
+ לכן מתקיימים תנאי ההנחה ומכאן קיימת נק' 
 \begin_inset Formula $a\in\bigcap_{k=1}^{\infty}B_{k}$
 \end_inset
 
@@ -1672,7 +1680,7 @@ X=\bigcup_{i=1}^{p}B(x_{i},\epsilon)\subset\bigcup_{i=1}^{p}E_{\alpha_{i}}
 \begin_inset Formula 
 \[
 y_{n}=\begin{cases}
-A^{n}y & n=1,2,...\\
+A^{n}y & n\in\mathbb{N}\\
 y & n=0
 \end{cases}
 \]
@@ -2149,7 +2157,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \end_inset
 
  מתקיים 
-\begin_inset Formula $\Vert x-\sum_{i=1}^{\infty}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert<\epsilon$
+\begin_inset Formula $\Vert x-\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert<\epsilon$
 \end_inset
 
 .
@@ -2312,7 +2320,11 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \end_inset
 
 , לכן 
-\begin_inset Formula $\Vert x\Vert^{2}=\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle^{2}$
+\begin_inset Formula $\lim_{n\rightarrow\infty}\Vert x\Vert^{2}-\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle^{2}=0$
+\end_inset
+
+ ומכאן ש- 
+\begin_inset Formula $\Vert x\Vert^{2}=\sum_{i=1}^{\infty}\langle x,\varphi_{i}\rangle^{2}$
 \end_inset
 
 
@@ -2358,15 +2370,15 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_inset Newline newline
 \end_inset
 
-אם עבור 
+נניח כי עבור כל 
 \begin_inset Formula $x\in\mathcal{Y}$
 \end_inset
 
- יתקיים 
-\begin_inset Formula $\Vert x\Vert^{2}=\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle^{2}$
+ מתקיים 
+\begin_inset Formula $\Vert x\Vert^{2}=\sum_{i=1}^{\infty}\langle x,\varphi_{i}\rangle^{2}$
 \end_inset
 
- אזי לכל 
+, אזי לפי המסקנה בהוכחה של בסל לכל 
 \begin_inset Formula $n$
 \end_inset
 
@@ -2496,7 +2508,7 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
 
 \begin_layout Standard
 מצד שני, לפי אי שיוויון בסל לפונקציה 
-\begin_inset Formula $f\in H[0,2\pi]$
+\begin_inset Formula $f'\in H[0,2\pi]$
 \end_inset
 
  מתקיים
@@ -2686,7 +2698,7 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
 \end_inset
 
  המקיימת 
-\begin_inset Formula $\forall x\in\mathbb{R}\ \psi(x+T)=\psi(x)$
+\begin_inset Formula $\forall x\in\mathbb{R\ }\ \psi(x+T)=\psi(x)$
 \end_inset
 
 , אזי עבור כל 
@@ -2735,12 +2747,77 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
 מהטענה נקבל
 \begin_inset Formula 
 \[
-\int_{0}^{2\pi}D_{n}(x_{0}-t)dt=\int_{x_{0}}^{x_{0}-2\pi}D_{n}(\tau)d\tau=\int_{x_{0}-2\pi}^{x_{0}}D_{n}(\tau)d\tau=\int_{0}^{2\pi}D_{n}(\tau)d\tau=2\pi
+\int_{0}^{2\pi}D_{n}(x_{0}-t)dt=\int_{x_{0}}^{x_{0}-2\pi}D_{n}(\tau)d\tau=\int_{x_{0}-2\pi}^{x_{0}}D_{n}(\tau)d\tau=\int_{0}^{2\pi}D_{n}(\tau)d\tau\overset{\star}{=}2\pi
 \]
 
 \end_inset
 
- לכן
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\star$
+\end_inset
+
+ - מתכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של גרעין דריכלה )
+\begin_inset Formula $\frac{1}{2\pi}\int_{0}^{2\pi}D_{n}(x)dx=1$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+לכן
 \begin_inset Formula 
 \[
 f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x_{0}-t)dt-\frac{1}{2\pi}\int_{0}^{2\pi}f(t)D_{n}(x_{0}-t)dt=
@@ -2823,7 +2900,7 @@ f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x
 \begin_inset Formula $t=x_{0}$
 \end_inset
 
- אבל ב- 
+ אבל עבור 
 \begin_inset Formula $t=x_{0}$
 \end_inset
 
@@ -2874,7 +2951,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \begin_inset Formula $A_{n}\subset X$
 \end_inset
 
- דלילה אזי 
+ דלילה, אזי 
 \begin_inset Formula $X\ne\bigcup_{n\in\mathbb{N}}A_{n}$
 \end_inset
 
@@ -2964,7 +3041,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \end_inset
 
  עם רדיוס 
-\begin_inset Formula $\frac{1}{3}<$
+\begin_inset Formula $\frac{1}{3}>$
 \end_inset
 
  כך ש- 
@@ -2989,7 +3066,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \end_inset
 
  עם רדיוס 
-\begin_inset Formula $\frac{1}{n+1}<$
+\begin_inset Formula $\frac{1}{n+1}>$
 \end_inset
 
  כך ש- 
@@ -3047,12 +3124,12 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 0
 \numeric off
 .
- לכן, לפי משפט קודם, קיימת 
+ לכן, לפי משפט על סדרה יורדת של כדורים סגורים, קיימת 
 \begin_inset Formula $z$
 \end_inset
 
  כך ש- 
-\begin_inset Formula $z\in\bigcap_{n\in\mathbb{N}}B_{n}$
+\begin_inset Formula $z\in\bigcap_{n\in\mathbb{N}}\overline{B_{n}}$
 \end_inset
 
 .
