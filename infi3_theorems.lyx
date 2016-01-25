@@ -201,7 +201,7 @@
 \begin_inset Formula $x_{n}$
 \end_inset
 
- לא מכילה תת סדרה מתכנסת כי היא לא חסומה.
+ לא מכילה תת סדרה מתכנסת.
  אם 
 \begin_inset Formula $x_{n_{k}}\rightarrow x$
 \end_inset
@@ -310,10 +310,14 @@
 \end_inset
 
  מתקיים 
-\begin_inset Formula $|x_{i}^{n}|\le\Vert x_{i}^{n}\Vert\le r$
+\begin_inset Formula $|x_{i}^{n}|\le\Vert x^{n}\Vert_{p}\le r$
 \end_inset
 
-, כלומר, כל סדרה 
+, כלומר, עבור כל 
+\begin_inset Formula $1\le i\le d$
+\end_inset
+
+ סדרה 
 \begin_inset Formula $(x_{i}^{n})_{n=1}^{\infty}\subset\mathbb{R}$
 \end_inset
 
@@ -323,7 +327,7 @@
 \end_inset
 
  מכילה תת מסדרה מתכנסת 
-\begin_inset Formula $\{n_{j,1}\}\subset\mathbb{N}\ x_{1}^{n_{j,1}}\xrightarrow[j\rightarrow\infty]{}x_{1}$
+\begin_inset Formula $\{n_{j,1}\}\subset\mathbb{N},\ x_{1}^{n_{j,1}}\xrightarrow[j\rightarrow\infty]{}x_{1}$
 \end_inset
 
 .
@@ -933,8 +937,7 @@ L_{n}=\{x_{m}\ |\ m\ge n\}\subset X
 \begin_inset Formula $\epsilon>0$
 \end_inset
 
- כמתואר.
- אז לכל 
+ כמתואר, אז לכל 
 \begin_inset Formula $n$
 \end_inset
 
@@ -1142,7 +1145,11 @@ B(x_{1},\epsilon)\cup B(x_{2},\epsilon)=X
 \begin_inset Formula $(x_{n})_{n=1}^{\infty}$
 \end_inset
 
- לא מכילה תת סדרה מתכנסת, סתירה.
+ לא מכילה תת סדרה מתכנסת, סתירה לקומפקטיות 
+\begin_inset Formula $X$
+\end_inset
+
+.
  מכאן שמצאנו כיסוי סופי של כדורים עם ה-
 \begin_inset Formula $\epsilon$
 \end_inset
@@ -1917,7 +1924,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
  מתקיים 
 \begin_inset Formula 
 \[
-\Vert x-z\Vert^{2}=\Vert(x-y)+(y-z)\Vert^{2}\overset{(1)}{=}\Vert x-y\Vert^{2}+\Vert y-z\Vert^{2}\overset{(2)}{\ge}\Vert x-y\Vert^{2}
+\Vert x-z\Vert^{2}=\Vert(x-y)+(y-z)\Vert^{2}\overset{(*)}{=}\Vert x-y\Vert^{2}+\Vert y-z\Vert^{2}\ge\Vert x-y\Vert^{2}
 \]
 
 \end_inset
@@ -1927,7 +1934,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \end_inset
 
 
-\begin_inset Formula $(1)$
+\begin_inset Formula $(*)$
 \end_inset
 
  - 
@@ -1935,22 +1942,6 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \end_inset
 
  )פיתגורס(
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $(2)$
-\end_inset
-
- - 
-\begin_inset Formula $y\ne z$
-\end_inset
-
- ולכן 
-\begin_inset Formula $\Vert y-z\Vert^{2}>0$
-\end_inset
-
-
 \end_layout
 
 \begin_layout Paragraph
@@ -2061,7 +2052,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \end_inset
 
  מתקיים 
-\begin_inset Formula $x=\sum_{i=1}^{\infty}(x,\varphi_{i})\varphi_{i}$
+\begin_inset Formula $x=\sum_{i=1}^{\infty}\langle x,\varphi_{i}\rangle\varphi_{i}$
 \end_inset
 
 
@@ -2164,11 +2155,11 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_inset Newline newline
 \end_inset
 
-פיתוח 
+נשים לב כי הפיתוח 
 \begin_inset Formula $x=\sum_{i=1}^{\infty}\lambda_{i}\varphi_{i}$
 \end_inset
 
- הוא יחיד, לכן 
+ הוא יחיד ולכן 
 \begin_inset Formula 
 \[
 0=x-x=\sum_{i=1}^{\infty}(\lambda_{i}-\langle x,\varphi_{i}\rangle)\varphi_{i}
@@ -2184,7 +2175,11 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 
 \end_inset
 
+יהא 
+\begin_inset Formula $\epsilon>0$
+\end_inset
 
+, 
 \begin_inset Formula $\phi$
 \end_inset
 
@@ -2225,7 +2220,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_inset Formula $n>n_{0}$
 \end_inset
 
- ולפי המסקנה בהוכחה של בסל נקבל כי
+ מתקיים
 \begin_inset Formula 
 \[
 \Vert x-\sum_{i=1}^{n}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert\le\Vert x-\sum_{i=1}^{n_{0}}\langle x,\varphi_{i}\rangle\varphi_{i}\Vert<\epsilon
@@ -2430,11 +2425,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_inset Formula $f$
 \end_inset
 
- מתכנס במידה שווה ב- 
-\begin_inset Formula $[0,2\pi]$
-\end_inset
-
- ל- 
+ מתכנס במידה שווה ל- 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2698,7 +2689,7 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
 \end_inset
 
  המקיימת 
-\begin_inset Formula $\forall x\in\mathbb{R\ }\ \psi(x+T)=\psi(x)$
+\begin_inset Formula $(*)\ \forall x\in\mathbb{R\ }\ \psi(x+T)=\psi(x)$
 \end_inset
 
 , אזי עבור כל 
@@ -2731,7 +2722,7 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
 
 \begin_inset Formula 
 \[
-=\int_{T}^{a+T}\psi(x)dx-\int_{0}^{a}\psi(x)dx\overset{x=y+T}{=}\int_{0}^{a}\psi(y+T)dy-\int_{0}^{a}\psi(x)dx=0
+=\int_{T}^{a+T}\psi(x)dx-\int_{0}^{a}\psi(x)dx\overset{x=y+T}{=}\int_{0}^{a}\psi(y+T)dy-\int_{0}^{a}\psi(x)dx\overset{(*)}{=}0
 \]
 
 \end_inset
@@ -2855,14 +2846,26 @@ f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x
 
  לפי תנאי המשפט.
  עבור 
-\begin_inset Formula $x\in(0,2\pi)\backslash(x_{0}-\delta,x_{0}+\delta)$
+\begin_inset Formula $t\in(0,2\pi)\backslash(x_{0}-\delta,x_{0}+\delta)$
 \end_inset
 
  מתקיים 
 \begin_inset Formula $|g(t)|\le\frac{1}{\delta}|f(t)-f(x_{0})|$
 \end_inset
 
-.
+, 
+\begin_inset Formula $|f(t)-f(x_{0})|$
+\end_inset
+
+ אינטגרבילית ב-
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+ ולכן גם 
+\begin_inset Formula $g$
+\end_inset
+
+ אינטגרבילית.
  
 \end_layout
 
@@ -2896,11 +2899,15 @@ f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x
 \end_inset
 
 .
+ 
+\begin_inset Formula $x_{0}\in(0,2\pi)$
+\end_inset
+
  לכן 
 \begin_inset Formula $t=x_{0}$
 \end_inset
 
- אבל עבור 
+, אבל עבור 
 \begin_inset Formula $t=x_{0}$
 \end_inset
 
@@ -3645,7 +3652,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
  מספיק קטנים, נגדיר את הפוקנציה:
 \begin_inset Formula 
 \[
-w(h,k)=f(x_{0}+h,y_{0}+k)-f(x_{0},y_{0}+k)-f(x_{0}+h,y_{0})+f(x_{0},y_{0})
+W(h,k)=\frac{f(x_{0}+h,y_{0}+k)-f(x_{0},y_{0}+k)-f(x_{0}+h,y_{0})+f(x_{0},y_{0})}{hk}
 \]
 
 \end_inset
@@ -3666,7 +3673,7 @@ w(h,k)=f(x_{0}+h,y_{0}+k)-f(x_{0},y_{0}+k)-f(x_{0}+h,y_{0})+f(x_{0},y_{0})
  כעת
 \begin_inset Formula 
 \[
-w(h,k)=\frac{\varphi(x_{0}+h)-\varphi(x_{0})}{h}
+W(h,k)=\frac{\varphi(x_{0}+h)-\varphi(x_{0})}{h}
 \]
 
 \end_inset
@@ -3702,7 +3709,7 @@ w(h,k)=\frac{\varphi(x_{0}+h)-\varphi(x_{0})}{h}
  כך ש-
 \begin_inset Formula 
 \[
-w(h,k)=\frac{\varphi'(x_{0}+\theta_{1}h)h}{h}=\varphi'(x_{0}+\theta_{1}h)=\frac{\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y_{0}+k)-\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y_{0})}{k}
+W(h,k)=\frac{\varphi'(x_{0}+\theta_{1}h)h}{h}=\varphi'(x_{0}+\theta_{1}h)=\frac{\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y_{0}+k)-\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y_{0})}{k}
 \]
 
 \end_inset
@@ -3735,7 +3742,7 @@ w(h,k)=\frac{\varphi'(x_{0}+\theta_{1}h)h}{h}=\varphi'(x_{0}+\theta_{1}h)=\frac{
  כך ש-
 \begin_inset Formula 
 \[
-w(h,k)=\frac{\partial^{2}f}{\partial x\partial y}(x_{0}+\theta_{1}h,y_{0}+\theta_{2}k)
+W(h,k)=\frac{\partial^{2}f}{\partial x\partial y}(x_{0}+\theta_{1}h,y_{0}+\theta_{2}k)
 \]
 
 \end_inset
@@ -3751,13 +3758,13 @@ w(h,k)=\frac{\partial^{2}f}{\partial x\partial y}(x_{0}+\theta_{1}h,y_{0}+\theta
  אזי
 \begin_inset Formula 
 \[
-w(h,k)=\frac{\psi(y_{0}+k)-\psi(y_{0})}{k}
+W(h,k)=\frac{\psi(y_{0}+k)-\psi(y_{0})}{k}
 \]
 
 \end_inset
 
- ולען קיימת 
-\begin_inset Formula $\theta_{3}\in(0,1)$
+ ולכן קיימות 
+\begin_inset Formula $\theta_{3},\theta_{4}\in(0,1)$
 \end_inset
 
  כך ש-
@@ -3768,16 +3775,11 @@ w(h,k)=\psi'(y_{0}+\theta_{3}k)=\frac{\frac{\partial f}{\partial y}(x_{0}+h,y_{0
 
 \end_inset
 
- עבור 
-\begin_inset Formula $\theta_{4}\in(0,1)$
-\end_inset
-
-.
  הוכחנו כי לכל 
 \begin_inset Formula $h,k\ne0$
 \end_inset
 
- קטנים, קיימים 
+ קטנים, קיימות 
 \begin_inset Formula $\theta_{i}\in(0,1)$
 \end_inset
 
@@ -3788,7 +3790,7 @@ w(h,k)=\psi'(y_{0}+\theta_{3}k)=\frac{\frac{\partial f}{\partial y}(x_{0}+h,y_{0
  כך ש-
 \begin_inset Formula 
 \[
-\frac{\partial^{2}f}{\partial y\partial x}(x_{0}+\theta_{4}h,y_{0}+\theta_{3}k)=w(h,k)=\frac{\partial^{2}f}{\partial x\partial y}(x_{0}+\theta_{1}h,y_{0}+\theta_{2}k)
+\frac{\partial^{2}f}{\partial y\partial x}(x_{0}+\theta_{4}h,y_{0}+\theta_{3}k)=W(h,k)=\frac{\partial^{2}f}{\partial x\partial y}(x_{0}+\theta_{1}h,y_{0}+\theta_{2}k)
 \]
 
 \end_inset
@@ -3808,7 +3810,7 @@ w(h,k)=\psi'(y_{0}+\theta_{3}k)=\frac{\frac{\partial f}{\partial y}(x_{0}+h,y_{0
  קיימים
 \begin_inset Formula 
 \[
-\lim_{h,k\rightarrow0}\frac{\partial^{2}f}{\partial x\partial y}(x_{0}+\theta_{1}h,y_{0}+\theta_{2}k)=\frac{\partial^{2}f}{\partial x\partial y}(x_{0},y_{0})=\lim_{h,k\rightarrow0}w(h,k)=
+\lim_{h,k\rightarrow0}\frac{\partial^{2}f}{\partial x\partial y}(x_{0}+\theta_{1}h,y_{0}+\theta_{2}k)=\frac{\partial^{2}f}{\partial x\partial y}(x_{0},y_{0})=\lim_{h,k\rightarrow0}W(h,k)=
 \]
 
 \end_inset
@@ -3843,7 +3845,7 @@ w(h,k)=\psi'(y_{0}+\theta_{3}k)=\frac{\frac{\partial f}{\partial y}(x_{0}+h,y_{0
 
  והן רציפות.
  תהי 
-\begin_inset Formula $\overline{\Delta x}=(\Delta x_{1},...,\Delta x_{d})$
+\begin_inset Formula $\overline{\Delta x}=(\Delta x_{1},...,\Delta x_{d})\in\mathbb{R}^{d}$
 \end_inset
 
  כך ש- 
@@ -3860,7 +3862,7 @@ w(h,k)=\psi'(y_{0}+\theta_{3}k)=\frac{\frac{\partial f}{\partial y}(x_{0}+h,y_{0
 f(\overline{x_{0}}+\overline{\Delta x})=f(\overline{x_{0}})+\sum_{n=1}^{m}\frac{1}{n!}\sum_{\substack{k_{1},...,k_{d}\ge0\\
 k_{1}+...+k_{d}=n
 }
-}\frac{n!}{k_{1}!k_{2}!\cdots k_{d}!}\cdot\frac{\partial^{n}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}(\overline{x_{0}})\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}+R
+}\frac{n!}{k_{1}!k_{2}!\cdots k_{d}!}\cdot\frac{\partial^{n}f}{\partial x_{1}^{k_{1}}\cdots\partial x_{d}^{k_{d}}}(\overline{x_{0}})\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}+R
 \]
 
 \end_inset
@@ -3871,7 +3873,7 @@ k_{1}+...+k_{d}=n
 R=\frac{1}{(m+1)!}\sum_{\substack{k_{1},...,k_{d}\ge0\\
 k_{1}+...+k_{d}=m+1
 }
-}\frac{(m+1)!}{k_{1}!k_{2}!\cdots k_{d}!}\cdot\frac{\partial^{m+1}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}(\overline{x_{0}}+\theta\overline{\Delta x})\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}
+}\frac{(m+1)!}{k_{1}!k_{2}!\cdots k_{d}!}\cdot\frac{\partial^{m+1}f}{\partial x_{1}^{k_{1}}\cdots\partial x_{d}^{k_{d}}}(\overline{x_{0}}+\theta\overline{\Delta x})\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}
 \]
 
 \end_inset
@@ -3942,10 +3944,9 @@ f_{n+1}(\overline{x})=\sum_{i=1}^{d}\frac{\partial f_{n}}{\partial x_{i}}(\overl
 \begin_inset Formula 
 \[
 f_{n}(\overline{x})=\sum_{\substack{k_{1},...,k_{d}\ge0\\
-k_{1}+...+k_{d}=n\\
-\\
+k_{1}+...+k_{d}=n
 }
-}\frac{n!}{k_{1}!k_{2}!\cdots k_{d}!}\cdot\frac{\partial^{n}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}(\overline{x})\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}
+}\frac{n!}{k_{1}!k_{2}!\cdots k_{d}!}\cdot\frac{\partial^{n}f}{\partial x_{1}^{k_{1}}\cdots\partial x_{d}^{k_{d}}}(\overline{x})\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}
 \]
 
 \end_inset
@@ -3957,7 +3958,22 @@ k_{1}+...+k_{d}=n\\
 מתקיים
 \begin_inset Formula 
 \[
-F'(t)=\frac{d}{dt}f(\overline{x_{0}}+t\overline{\Delta x})\overset{}{=}\frac{d}{dt}f(x_{1}^{0}+t\Delta x_{1},x_{2}^{0}+t\Delta x_{2},...,x_{d}^{0}+t\Delta x_{d})=\sum_{i=1}^{d}\frac{\partial f}{\partial x_{i}}(\overline{x})\Delta x_{i}=f_{1}(\overline{x})
+F'(t)=\frac{d}{dt}f(\overline{x_{0}}+t\overline{\Delta x})\overset{(*)}{=}\frac{d}{dt}f(x_{1}^{0}+t\Delta x_{1},x_{2}^{0}+t\Delta x_{2},...,x_{d}^{0}+t\Delta x_{d})=\sum_{i=1}^{d}\frac{\partial f}{\partial x_{i}}(\overline{x})\Delta x_{i}=f_{1}(\overline{x})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(*)$
+\end_inset
+
+ - כלל השרשרת
+\begin_inset Formula 
+\[
+F''(t)=\frac{d}{dt}f_{1}(\overline{x_{0}}+t\overline{\Delta x})=\sum_{i=1}^{d}\frac{\partial f_{1}}{\partial x_{i}}(\overline{x})\Delta x_{i}=\sum_{i_{1}=1}^{d}\Delta x_{i_{1}}\frac{\partial}{\partial x_{i_{1}}}(\sum_{i_{2}=1}^{d}\frac{\partial f}{\partial x_{i_{2}}}(\overline{x})\Delta x_{i_{2}})=
 \]
 
 \end_inset
@@ -3965,15 +3981,7 @@ F'(t)=\frac{d}{dt}f(\overline{x_{0}}+t\overline{\Delta x})\overset{}{=}\frac{d}{
 
 \begin_inset Formula 
 \[
-F''(t)=\frac{d}{dt}f_{1}(\overline{x_{0}}+t\overline{\Delta x})=\sum_{i=1}^{d}\frac{\partial f_{1}}{\partial x_{i}}(\overline{x})\Delta x_{i}=\sum_{i=1}^{d}\Delta x_{i}\frac{\partial}{\partial x_{i}}(\sum_{i_{2}=1}^{d}\frac{\partial f}{\partial x_{i_{2}}}(\overline{x})\Delta x_{i_{2}})=
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-=\sum_{i_{1},i_{2}=1}^{d}\Delta x_{i_{1}}\Delta x_{i_{2}}\frac{\partial^{2}f}{\partial x_{i_{2}}\partial x_{i_{1}}}
+=\sum_{i_{1},i_{2}=1}^{d}\Delta x_{i_{1}}\Delta x_{i_{2}}\frac{\partial^{2}f}{\partial x_{i_{2}}\partial x_{i_{1}}}(\overline{x})
 \]
 
 \end_inset
@@ -3982,18 +3990,23 @@ F''(t)=\frac{d}{dt}f_{1}(\overline{x_{0}}+t\overline{\Delta x})=\sum_{i=1}^{d}\f
 \end_layout
 
 \begin_layout Enumerate
+עבור 
 \begin_inset Formula $n=0$
 \end_inset
 
  נכון.
- אם נכון עבור 
+ נניח נכונות עבור 
 \begin_inset Formula $n$
 \end_inset
 
- אזי 
+ ונראה עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+ 
 \begin_inset Formula 
 \[
-F^{(n+1)}(t)=\frac{d}{dt}f_{n}(\overline{x_{0}}+t\overline{\Delta x})=\sum_{i=1}^{n}f_{n}(\overline{x})\Delta x_{i}=f_{n+1}(\overline{x})
+F^{(n+1)}(t)=\frac{d}{dt}f_{n}(\overline{x_{0}}+t\overline{\Delta x})=\sum_{i=1}^{n}\frac{\partial f_{n}}{\partial x_{i}}(\overline{x})\Delta x_{i}=f_{n+1}(\overline{x})
 \]
 
 \end_inset
@@ -4017,9 +4030,7 @@ f_{2}(\overline{x})=\sum_{i_{1}=1}^{d}\Delta x_{i_{1}}\frac{\partial}{\partial x
 
 \begin_inset Formula 
 \[
-\overset{\star}{=}\sum_{\substack{k_{1},...,k_{d}\\
-k_{i}\ge0
-}
+\overset{\star}{=}\sum_{\substack{k_{1},...,k_{d}\ge0}
 }\frac{2!}{k_{1}!...k_{d}!}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{2}f}{\partial x_{1}^{k_{1}}\cdots\partial x_{d}^{k_{d}}}
 \]
 
@@ -4032,9 +4043,8 @@ k_{i}\ge0
  מתקיים כי 
 \begin_inset Formula 
 \[
-(a_{1}+\cdots+a_{d})^{2}=\sum_{i_{1},i_{2}=1}^{d}a_{i_{1}}a_{i_{2}}=\sum_{\substack{(k_{1},\cdots k_{d})\\
-k_{i}\ge0\\
-\sum k_{i}=2
+(a_{1}+\cdots+a_{d})^{2}=\sum_{i_{1},i_{2}=1}^{d}a_{i_{1}}a_{i_{2}}=\sum_{\substack{k_{1},\cdots,k_{d}\ge0\\
+\sum_{i=1}^{d}k_{i}=2
 }
 }\frac{2!}{k_{1}!\cdots k_{d}!}a_{1}^{k_{1}}\cdots a_{d}^{k_{d}}
 \]
@@ -4092,11 +4102,10 @@ f_{n}(\overline{x})=\sum_{1\le i_{1},...,i_{n}\le d}\Delta x_{i_{1}}\frac{\parti
  ולכן
 \begin_inset Formula 
 \[
-f_{n}(\overline{x})=\sum_{\substack{(k_{1},\cdots k_{d})\\
-k_{1}+...+k_{d}=n\\
-k_{i}\ge0
+f_{n}(\overline{x})=\sum_{\substack{k_{1},\cdots,k_{d}\ge0\\
+k_{1}+...+k_{d}=n
 }
-}\frac{n!}{k_{1}!\cdots k_{d}!}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{n}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}
+}\frac{n!}{k_{1}!\cdots k_{d}!}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{n}f}{\partial x_{1}^{k_{1}}\cdots\partial x_{d}^{k_{d}}}(\overline{x})
 \]
 
 \end_inset
@@ -4148,7 +4157,7 @@ F(1)=F(0)+\sum_{n=1}^{m}\frac{F^{(n)}(0)}{n!}1^{n}+\frac{1}{(m+1)!}F^{(m+1)}(\th
 f(\overline{x_{0}}+\overline{\Delta x})=f(\overline{x_{0}})+\sum_{n=1}^{m}\frac{1}{n!}\sum_{\substack{(k_{1},...,k_{d})\\
 k_{1}+...+k_{d}=n
 }
-}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{n}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}(\overline{x_{0}})+
+}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{n}f}{\partial x_{1}^{k_{1}}\cdots\partial x_{d}^{k_{d}}}(\overline{x_{0}})+
 \]
 
 \end_inset
@@ -4159,7 +4168,7 @@ k_{1}+...+k_{d}=n
 +\frac{1}{(m+1)!}\sum_{\substack{(k_{1},...,k_{d})\\
 k_{1}+...+k_{d}=m+1
 }
-}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{m+1}f}{\partial^{k_{1}}x_{1}\cdots\partial^{k_{d}}x_{d}}(\overline{x_{0}}+\theta\overline{\Delta x})
+}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{m+1}f}{\partial x_{1}^{k_{1}}\cdots\partial x_{d}^{k_{d}}}(\overline{x_{0}}+\theta\overline{\Delta x})
 \]
 
 \end_inset
@@ -4201,20 +4210,117 @@ k_{1}+...+k_{d}=m+1
 \end_layout
 
 \begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ בעלת נגזרות מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רציפות.
+ בור נקודה סטציונארית 
+\begin_inset Formula $\overline{x_{0}}$
+\end_inset
+
+, נסמן ב-
+\begin_inset Formula $l_{f}$
+\end_inset
+
+ את התבנית הריבועית 
+\begin_inset Formula 
+\[
+l_{f}(\overline{\Delta x})=\sum_{i=1}^{d}\sum_{j=1}^{d}\frac{\partial^{2}f}{\partial^{2}x_{i}}(\overline{x_{0}})\Delta x_{i}^{2}+2\sum_{1\le i<j\le d}\frac{\partial^{2}f}{\partial x_{i}\partial x_{j}}(\overline{x_{0}})\Delta x_{i}\Delta x_{j}
+\]
+
+\end_inset
+
 אם 
 \begin_inset Formula $l_{f}$
 \end_inset
 
- חיובית לחלוטין אזי 
+ חיובית לחלוטין אז 
 \begin_inset Formula $\overline{x_{0}}$
 \end_inset
 
- נקודת מינימום.
- ואם 
+ נקודת מינימום, ואם 
 \begin_inset Formula $l_{f}$
 \end_inset
 
- שלילית לחלוטין אזי 
+ שלילית לחלוטין אז 
 \begin_inset Formula $\overline{x_{0}}$
 \end_inset
 
@@ -4268,7 +4374,7 @@ R(\overline{\Delta x})=\sum_{i=1}^{d}\alpha_{ii}(\overline{\Delta x})\Delta x_{i
 
 .
  נגדיר 
-\begin_inset Formula $S^{d-1}\ni\overline{t}=\frac{\overline{\Delta x}}{\Vert\overline{\Delta x}\Vert}$
+\begin_inset Formula $\{\overline{y}\in\mathbb{R}^{d}\ |\ \Vert\overline{y}\Vert=1\}=S^{d-1}\ni\overline{t}=\frac{\overline{\Delta x}}{\Vert\overline{\Delta x}\Vert}$
 \end_inset
 
 .
