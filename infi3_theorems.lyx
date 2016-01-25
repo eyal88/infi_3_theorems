@@ -1810,7 +1810,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_inset Formula $A$
 \end_inset
 
- מערכת אורתוגונלית סופית או בת מניה במרחב אוקלידי 
+ מערכת אורתונורמלית סופית או בת מניה במרחב אוקלידי 
 \begin_inset Formula $\mathcal{Y}$
 \end_inset
 
@@ -2417,16 +2417,12 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_inset Formula $f(0)=f(2\pi)$
 \end_inset
 
- אזי בכל 
-\begin_inset Formula $x\in[0,2\pi]$
-\end_inset
-
- טור פורייה של 
+ אזי טור פורייה של 
 \begin_inset Formula $f$
 \end_inset
 
- מתכנס במידה שווה ל- 
-\begin_inset Formula $f$
+ מתכנס אליה במידה שווה ב- 
+\begin_inset Formula $[0,2\pi]$
 \end_inset
 
 
