@@ -1137,15 +1137,16 @@ B(x_{1},\epsilon)\cup B(x_{2},\epsilon)=X
 \end_inset
 
  לכל 
-\begin_inset Formula $i<j$
+\begin_inset Formula $i\ne j$
 \end_inset
 
 .
- הסדרה 
+ בפרט, 
 \begin_inset Formula $(x_{n})_{n=1}^{\infty}$
 \end_inset
 
- לא מכילה תת סדרה מתכנסת, סתירה לקומפקטיות 
+ וגם אף תת-סדרה שלה לא יכולה להיות סדרת קושי ולכן לא יכולה להתכנס.
+ זאת סתירה לקומפקטיות 
 \begin_inset Formula $X$
 \end_inset
 
@@ -2445,7 +2446,7 @@ f(x)=a_{0}(f)+\sum_{n=1}^{\infty}a_{n}(f)\cos(nx)+\sum_{n=1}^{\infty}b_{n}(f)\si
 \begin_inset Formula $f'$
 \end_inset
 
- אינטגרבילית רימן ב- 
+ רציפה למקוטעין ולכן אינטגרבילית רימן ב- 
 \begin_inset Formula $[0,2\pi]$
 \end_inset
 
@@ -2506,7 +2507,19 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
 
 \end_inset
 
-מכיוון ש- 
+מכיוון שלכל 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $(x-y)^{2}=x^{2}-2xy+y^{2}\ge0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $xy\le\frac{1}{2}(x^{2}+y^{2})$
+\end_inset
+
+ ומכאן- 
 \begin_inset Formula 
 \[
 |a_{n}(f)|=\frac{1}{n}|b_{n}(f')|\le\frac{1}{2}(b_{n}(f')^{2}+\frac{1}{n^{2}})
@@ -2564,8 +2577,8 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
 \end_inset
 
  וההתכנסות היא במידה שווה(.
- אבל 
-\begin_inset Formula $\mathscr{S}_{n}^{f}\rightarrow f$
+ התכנסות במ"ש גוררת התכנסות בממוצע ולכן 
+\begin_inset Formula $\mathscr{S}_{n}^{f}\rightarrow\mathscr{S}^{f}$
 \end_inset
 
  בממוצע, כלומר 
@@ -2600,7 +2613,7 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
 \end_layout
 
 \begin_layout Standard
-אזי 
+ומיחידות הגבול 
 \begin_inset Formula $[f]=[\mathscr{S}^{f}]$
 \end_inset
 
@@ -2837,12 +2850,12 @@ f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x
 \end_inset
 
  אינטגרבילית ב- 
-\begin_inset Formula $(x_{0}-\delta,x_{0}+\delta)$
+\begin_inset Formula $[x_{0}-\delta,x_{0}+\delta]$
 \end_inset
 
  לפי תנאי המשפט.
  עבור 
-\begin_inset Formula $t\in(0,2\pi)\backslash(x_{0}-\delta,x_{0}+\delta)$
+\begin_inset Formula $t\in[0,2\pi]\backslash(x_{0}-\delta,x_{0}+\delta)$
 \end_inset
 
  מתקיים 
@@ -2870,48 +2883,26 @@ f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x
 \begin_inset Formula $\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}$
 \end_inset
 
- אינטגרבילית ב- 
+ לא מוגדרת ב-
+\begin_inset Formula $t=x_{0}$
+\end_inset
+
+ אבל מתרחבת לפונקציה רציפה
+\begin_inset Formula 
+\[
+h(t):=\begin{cases}
+\frac{x_{0}-t}{\sin\left(\frac{x_{0}-t}{2}\right)} & t\ne x_{0}\\
+2 & t=x_{0}
+\end{cases}
+\]
+
+\end_inset
+
+שהיא אינטגרבילית ב- 
 \begin_inset Formula $[0,2\pi]$
 \end_inset
 
- כי:
-\begin_inset Newline newline
-\end_inset
-
-כאשר 
-\begin_inset Formula $\sin(\frac{x_{0}-t}{2})=0$
-\end_inset
-
- ו- 
-\begin_inset Formula $t\in[0,2\pi]$
-\end_inset
-
- אז 
-\begin_inset Formula $\frac{x_{0}-t}{2}=\pi k$
-\end_inset
-
- עבור 
-\begin_inset Formula $k\in\mathbb{Z}$
-\end_inset
-
-.
- 
-\begin_inset Formula $x_{0}\in(0,2\pi)$
-\end_inset
-
- לכן 
-\begin_inset Formula $t=x_{0}$
-\end_inset
-
-, אבל עבור 
-\begin_inset Formula $t=x_{0}$
-\end_inset
-
- הפונקציה 
-\begin_inset Formula $\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}$
-\end_inset
-
- רציפה ולכן
+, ולכן המכפלה אינטגרבילית
 \begin_inset Formula 
 \[
 H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}=\varphi(t)
@@ -3085,7 +3076,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \end_inset
 
  לכל 
-\begin_inset Formula $1\le k\le n-1$
+\begin_inset Formula $1\le k\le n$
 \end_inset
 
 .
@@ -3705,12 +3696,12 @@ W(h,k)=\frac{\varphi(x_{0}+h)-\varphi(x_{0})}{h}
  כך ש-
 \begin_inset Formula 
 \[
-W(h,k)=\frac{\varphi'(x_{0}+\theta_{1}h)h}{h}=\varphi'(x_{0}+\theta_{1}h)=\frac{\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y_{0}+k)-\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y_{0})}{k}
+W(h,k)=\frac{\varphi(x_{0}+h)-\varphi(x_{0})}{h}=\varphi'(x_{0}+\theta_{1}h)=\frac{\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y_{0}+k)-\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y_{0})}{k}
 \]
 
 \end_inset
 
- נשתמש במשפט ערך הביינים לפונקציה 
+ נשתמש במשפט ערך הביניים לפונקציה 
 \begin_inset Formula $\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y)$
 \end_inset
 
@@ -3766,7 +3757,7 @@ W(h,k)=\frac{\psi(y_{0}+k)-\psi(y_{0})}{k}
  כך ש-
 \begin_inset Formula 
 \[
-w(h,k)=\psi'(y_{0}+\theta_{3}k)=\frac{\frac{\partial f}{\partial y}(x_{0}+h,y_{0}+\theta_{3}k)-\frac{\partial f}{\partial y}(x_{0},y_{0}+\theta_{3}k)}{h}=\frac{\partial^{2}f}{\partial y\partial x}(x_{0}+\theta_{4}h,y_{0}+\theta_{3}k)
+W(h,k)=\psi'(y_{0}+\theta_{3}k)=\frac{\frac{\partial f}{\partial y}(x_{0}+h,y_{0}+\theta_{3}k)-\frac{\partial f}{\partial y}(x_{0},y_{0}+\theta_{3}k)}{h}=\frac{\partial^{2}f}{\partial y\partial x}(x_{0}+\theta_{4}h,y_{0}+\theta_{3}k)
 \]
 
 \end_inset
@@ -3780,7 +3771,7 @@ w(h,k)=\psi'(y_{0}+\theta_{3}k)=\frac{\frac{\partial f}{\partial y}(x_{0}+h,y_{0
 \end_inset
 
  עבור 
-\begin_inset Formula $1\le i\le k$
+\begin_inset Formula $1\le i\le4$
 \end_inset
 
  כך ש-
