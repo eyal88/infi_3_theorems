@@ -2047,8 +2047,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_inset Formula $\phi$
 \end_inset
 
- בסיס.
- יתר על כן, עבור כל 
+ בסיס, בפרט עבור כל 
 \begin_inset Formula $x\in\mathcal{Y}$
 \end_inset
 
@@ -2160,7 +2159,7 @@ A(x_{0})=A(\lim_{n\rightarrow\infty}A^{n}y)\overset{(*)}{=}\lim_{n\rightarrow\in
 \begin_inset Formula $x=\sum_{i=1}^{\infty}\lambda_{i}\varphi_{i}$
 \end_inset
 
- הוא יחיד ולכן 
+ הוא יחיד 
 \begin_inset Formula 
 \[
 0=x-x=\sum_{i=1}^{\infty}(\lambda_{i}-\langle x,\varphi_{i}\rangle)\varphi_{i}
@@ -3689,7 +3688,7 @@ W(h,k)=\frac{\varphi(x_{0}+h)-\varphi(x_{0})}{h}
 
 \end_inset
 
- אזי לפי משפט ערך הביניים, קיים 
+ אזי לפי משפט הערך הממוצע, קיים 
 \begin_inset Formula $\theta_{1}\in(0,1)$
 \end_inset
 
@@ -3701,7 +3700,7 @@ W(h,k)=\frac{\varphi(x_{0}+h)-\varphi(x_{0})}{h}=\varphi'(x_{0}+\theta_{1}h)=\fr
 
 \end_inset
 
- נשתמש במשפט ערך הביניים לפונקציה 
+ נשתמש במשפט הערך הממוצע לפונקציה 
 \begin_inset Formula $\frac{\partial f}{\partial x}(x_{0}+\theta_{1}h,y)$
 \end_inset
 
@@ -3942,38 +3941,7 @@ k_{1}+...+k_{d}=n
 \end_layout
 
 \begin_layout Standard
-מתקיים
-\begin_inset Formula 
-\[
-F'(t)=\frac{d}{dt}f(\overline{x_{0}}+t\overline{\Delta x})\overset{(*)}{=}\frac{d}{dt}f(x_{1}^{0}+t\Delta x_{1},x_{2}^{0}+t\Delta x_{2},...,x_{d}^{0}+t\Delta x_{d})=\sum_{i=1}^{d}\frac{\partial f}{\partial x_{i}}(\overline{x})\Delta x_{i}=f_{1}(\overline{x})
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $(*)$
-\end_inset
-
- - כלל השרשרת
-\begin_inset Formula 
-\[
-F''(t)=\frac{d}{dt}f_{1}(\overline{x_{0}}+t\overline{\Delta x})=\sum_{i=1}^{d}\frac{\partial f_{1}}{\partial x_{i}}(\overline{x})\Delta x_{i}=\sum_{i_{1}=1}^{d}\Delta x_{i_{1}}\frac{\partial}{\partial x_{i_{1}}}(\sum_{i_{2}=1}^{d}\frac{\partial f}{\partial x_{i_{2}}}(\overline{x})\Delta x_{i_{2}})=
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-=\sum_{i_{1},i_{2}=1}^{d}\Delta x_{i_{1}}\Delta x_{i_{2}}\frac{\partial^{2}f}{\partial x_{i_{2}}\partial x_{i_{1}}}(\overline{x})
-\]
-
-\end_inset
-
-
+נראה
 \end_layout
 
 \begin_layout Enumerate
@@ -3986,11 +3954,7 @@ F''(t)=\frac{d}{dt}f_{1}(\overline{x_{0}}+t\overline{\Delta x})=\sum_{i=1}^{d}\f
 \begin_inset Formula $n$
 \end_inset
 
- ונראה עבור 
-\begin_inset Formula $n+1$
-\end_inset
-
- 
+ ומתקיים 
 \begin_inset Formula 
 \[
 F^{(n+1)}(t)=\frac{d}{dt}f_{n}(\overline{x_{0}}+t\overline{\Delta x})=\sum_{i=1}^{n}\frac{\partial f_{n}}{\partial x_{i}}(\overline{x})\Delta x_{i}=f_{n+1}(\overline{x})
@@ -4001,7 +3965,7 @@ F^{(n+1)}(t)=\frac{d}{dt}f_{n}(\overline{x_{0}}+t\overline{\Delta x})=\sum_{i=1}
 
 \begin_inset Formula 
 \[
-f_{1}(\overline{x})=\sum_{i_{1}=1}^{d}\frac{\partial f}{\partial x_{i}}(\overline{x})\Delta x_{i}
+f_{1}(\overline{x})=\sum_{i=1}^{d}\frac{\partial f}{\partial x_{i}}(\overline{x})\Delta x_{i}
 \]
 
 \end_inset
@@ -4017,7 +3981,10 @@ f_{2}(\overline{x})=\sum_{i_{1}=1}^{d}\Delta x_{i_{1}}\frac{\partial}{\partial x
 
 \begin_inset Formula 
 \[
-\overset{\star}{=}\sum_{\substack{k_{1},...,k_{d}\ge0}
+\overset{\star}{=}\sum_{\substack{\substack{k_{1},...,k_{d}\ge0}
+\\
+k_{1}+...+k_{d}=2
+}
 }\frac{2!}{k_{1}!...k_{d}!}\Delta x_{1}^{k_{1}}\cdots\Delta x_{d}^{k_{d}}\frac{\partial^{2}f}{\partial x_{1}^{k_{1}}\cdots\partial x_{d}^{k_{d}}}
 \]
 
@@ -4279,7 +4246,7 @@ k_{1}+...+k_{d}=m+1
 \noun default
 \color inherit
 רציפות.
- בור נקודה סטציונארית 
+ עבור נקודה סטציונארית 
 \begin_inset Formula $\overline{x_{0}}$
 \end_inset
 
@@ -4290,7 +4257,7 @@ k_{1}+...+k_{d}=m+1
  את התבנית הריבועית 
 \begin_inset Formula 
 \[
-l_{f}(\overline{\Delta x})=\sum_{i=1}^{d}\sum_{j=1}^{d}\frac{\partial^{2}f}{\partial^{2}x_{i}}(\overline{x_{0}})\Delta x_{i}^{2}+2\sum_{1\le i<j\le d}\frac{\partial^{2}f}{\partial x_{i}\partial x_{j}}(\overline{x_{0}})\Delta x_{i}\Delta x_{j}
+l_{f}(\overline{\Delta x})=\sum_{i=1}^{d}\frac{\partial^{2}f}{\partial^{2}x_{i}}(\overline{x_{0}})\Delta x_{i}^{2}+2\sum_{1\le i<j\le d}\frac{\partial^{2}f}{\partial x_{i}\partial x_{j}}(\overline{x_{0}})\Delta x_{i}\Delta x_{j}
 \]
 
 \end_inset
@@ -4412,12 +4379,23 @@ l_{f}(\overline{\Delta x})=l_{f}(\Vert\overline{\Delta x}\Vert\overline{t})=\Ver
 
 \begin_inset Formula 
 \[
-<\epsilon(\sum_{i=1}^{d}\Delta x_{i}^{2}+2\sum_{1\le i<j\le d}|\Delta x_{i}||\Delta x_{j}|)=\epsilon(\sum_{i=1}^{d}|\Delta x_{i}|)^{2}\le\epsilon\sum_{i=1}^{d}1^{2}\sum_{i=1}^{d}|\Delta x_{i}|^{2}=\epsilon d\Vert\overline{\Delta x}\Vert^{2}
+<\epsilon(\sum_{i=1}^{d}\Delta x_{i}^{2}+2\sum_{1\le i<j\le d}|\Delta x_{i}||\Delta x_{j}|)=\epsilon(\sum_{i=1}^{d}|\Delta x_{i}|)^{2}\overset{\star}{\le}\epsilon\sum_{i=1}^{d}1^{2}\sum_{i=1}^{d}|\Delta x_{i}|^{2}=\epsilon d\Vert\overline{\Delta x}\Vert^{2}
 \]
 
 \end_inset
 
- נבחר 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\star$
+\end_inset
+
+ מקושי שוורץ
+\end_layout
+
+\begin_layout Standard
+נבחר 
 \begin_inset Formula $\epsilon=\frac{M}{2d}$
 \end_inset
 
@@ -4438,7 +4416,7 @@ f(\overline{x_{0}}+\overline{\Delta x})-f(\overline{x_{0}})=\frac{1}{2}(l_{f}(\o
 \end_inset
 
  לכל 
-\begin_inset Formula $0<\Vert\overline{\Delta x}\Vert<\delta$
+\begin_inset Formula $0<\Vert\overline{\Delta x}\Vert<\delta_{0}$
 \end_inset
 
  אז 
