@@ -617,45 +617,6 @@ X\backslash\bigcap_{i=1}^{m}F_{\alpha_{i}}=\bigcup_{i=1}^{m}(X\backslash F_{\alp
 \uwave default
 \noun default
 \color inherit
-2
-\numeric off
-(: זהה לכיוון הראשון.
-\begin_inset Newline newline
-\end_inset
-
-)
-\numeric on
-3
-\numeric off
- 
-\begin_inset Formula $\Longleftarrow$
-\end_inset
-
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 1
 \numeric off
 (: 
@@ -2558,7 +2519,7 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
  לפי קריטריון ויירשטראס, טור פורייה:
 \begin_inset Formula 
 \[
-\mathscr{S}_{n}^{f}(x)=a_{0}(f)+\sum_{k=1}^{n}a_{k}(f)\cos(nx)+\sum_{k=1}^{n}b_{k}(f)\sin(nx)
+\mathscr{S}_{n}^{f}(x)=a_{0}(f)+\sum_{k=1}^{n}a_{k}(f)\cos(kx)+\sum_{k=1}^{n}b_{k}(f)\sin(kx)
 \]
 
 \end_inset
@@ -4168,7 +4129,7 @@ k_{1}+...+k_{d}=m+1
 \begin_inset Formula $f$
 \end_inset
 
- בעלת נגזרות מסדר
+ בעלת כל הנגזרות החלקיות מסדר
 \family roman
 \series medium
 \shape up
@@ -4245,9 +4206,13 @@ k_{1}+...+k_{d}=m+1
 \uwave default
 \noun default
 \color inherit
-רציפות.
+והן רציפות.
  עבור נקודה סטציונארית 
 \begin_inset Formula $\overline{x_{0}}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\Delta x\in\mathbb{R}^{d}$
 \end_inset
 
 , נסמן ב-
@@ -4322,7 +4287,7 @@ R(\overline{\Delta x})=\sum_{i=1}^{d}\alpha_{ii}(\overline{\Delta x})\Delta x_{i
 \begin_inset Formula $l_{f}$
 \end_inset
 
- חיובית לחלוטין, 
+ חיובית לחלוטין, יהי 
 \begin_inset Formula $\overline{\Delta x}\ne0$
 \end_inset
 
@@ -4343,12 +4308,8 @@ l_{f}(\overline{\Delta x})=l_{f}(\Vert\overline{\Delta x}\Vert\overline{t})=\Ver
 \begin_inset Formula $M>0$
 \end_inset
 
- וכל 
-\begin_inset Formula $\overline{\Delta x}\ne0$
-\end_inset
-
 .
- מצד שני, מכיוון ש- 
+ בנוסף, מכיוון ש- 
 \begin_inset Formula $\alpha_{ij}(\overline{\Delta x})\xrightarrow[\overline{\Delta x}\rightarrow0]{}0$
 \end_inset
 
@@ -4415,11 +4376,11 @@ f(\overline{x_{0}}+\overline{\Delta x})-f(\overline{x_{0}})=\frac{1}{2}(l_{f}(\o
 
 \end_inset
 
- לכל 
+ קיבלנו כי לכל 
 \begin_inset Formula $0<\Vert\overline{\Delta x}\Vert<\delta_{0}$
 \end_inset
 
- אז 
+ מתקיים 
 \begin_inset Formula $x_{0}$
 \end_inset
 
