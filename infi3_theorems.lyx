@@ -2541,39 +2541,15 @@ b_{n}(f) & = & \frac{1}{\pi}\int_{0}^{2\pi}f(x)\sin(nx)dx\overset{\star}{=}\frac
 \begin_inset Formula $\mathscr{S}_{n}^{f}\rightarrow\mathscr{S}^{f}$
 \end_inset
 
- בממוצע, כלומר 
-\begin_inset Formula 
-\[
-(1)\ \int_{0}^{2\pi}(\mathscr{S}_{n}^{f}(x)-\mathscr{S}^{f}(x))^{2}dx\xrightarrow[n\rightarrow\infty]{}0
-\]
-
-\end_inset
-
- מצד שני 
+ בממוצע, מצד שני 
 \begin_inset Formula $f\in H[0,2\pi]$
 \end_inset
 
  ולכן 
-\begin_inset Formula 
-\[
-(2)\ \int_{0}^{2\pi}(\mathscr{S}_{n}^{f}(x)-f(x))^{2}dx\xrightarrow[n\rightarrow\infty]{}0
-\]
-
+\begin_inset Formula $\mathscr{S}_{n}^{f}\rightarrow f$
 \end_inset
 
- 
-\begin_inset Formula $\Vert\mathscr{S}_{n}^{f}-\mathscr{S}^{f}\Vert_{2}\rightarrow0\iff(1)$
-\end_inset
-
- ו- 
-\begin_inset Formula $\Vert\mathscr{S}_{n}^{f}-f\Vert_{2}\rightarrow0\iff(2)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-ומיחידות הגבול 
+ בממוצע, ומיחידות הגבול 
 \begin_inset Formula $[f]=[\mathscr{S}^{f}]$
 \end_inset
 
@@ -2843,26 +2819,44 @@ f(x_{0})-\mathscr{S}_{n}^{f}(x_{0})=\frac{1}{2\pi}\int_{0}^{2\pi}f(x_{0})D_{n}(x
 \begin_inset Formula $\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}$
 \end_inset
 
- לא מוגדרת ב-
-\begin_inset Formula $t=x_{0}$
-\end_inset
-
- אבל מתרחבת לפונקציה רציפה
-\begin_inset Formula 
-\[
-h(t):=\begin{cases}
-\frac{x_{0}-t}{\sin\left(\frac{x_{0}-t}{2}\right)} & t\ne x_{0}\\
-2 & t=x_{0}
-\end{cases}
-\]
-
-\end_inset
-
-שהיא אינטגרבילית ב- 
+ אינטגרבילית ב- 
 \begin_inset Formula $[0,2\pi]$
 \end_inset
 
-, ולכן המכפלה אינטגרבילית
+ כי:
+\begin_inset Newline newline
+\end_inset
+
+כאשר 
+\begin_inset Formula $\sin(\frac{x_{0}-t}{2})=0$
+\end_inset
+
+ ו- 
+\begin_inset Formula $t\in[0,2\pi]$
+\end_inset
+
+ אז 
+\begin_inset Formula $\frac{x_{0}-t}{2}=\pi k$
+\end_inset
+
+ עבור 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $t=x_{0}$
+\end_inset
+
+ אבל ב- 
+\begin_inset Formula $t=x_{0}$
+\end_inset
+
+ הפונקציה 
+\begin_inset Formula $\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}$
+\end_inset
+
+ רציפה ולכן המכפלה אינטגרבילית
 \begin_inset Formula 
 \[
 H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}{2})}=\varphi(t)
@@ -3263,7 +3257,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 
 .
  נסמן 
-\begin_inset Formula $\tau=x-t$
+\begin_inset Formula $\tau=t-x$
 \end_inset
 
  ואז 
@@ -3371,7 +3365,7 @@ H[0,2\pi]\ni\frac{f(x_{0})-f(t)}{x_{0}-t}\cdot\frac{x_{0}-t}{\sin(\frac{x_{0}-t}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-|\frac{1}{2\pi}\int_{-\delta}^{\delta}(f(x+\tau)-f(x))K_{n}(\tau)d\tau|\le\frac{1}{2\pi}\int_{-\delta}^{\delta}|f(x-\tau)-f(x)|K_{n}(\tau)d\tau\le
+|\frac{1}{2\pi}\int_{-\delta}^{\delta}(f(x+\tau)-f(x))K_{n}(\tau)d\tau|\le\frac{1}{2\pi}\int_{-\delta}^{\delta}|f(x+\tau)-f(x)|K_{n}(\tau)d\tau\le
 \]
 
 \end_inset
@@ -4096,6 +4090,109 @@ k_{1}+...+k_{d}=m+1
 \end_layout
 
 \begin_layout Paragraph
+משפט )תנאי הכרחי לקיום נקודת אקסטרימום(
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\overline{a}=(a_{1},...,a_{d})$
+\end_inset
+
+ נקודת אקסטרימום של 
+\begin_inset Formula $f:\Omega\rightarrow\mathbb{R}$
+\end_inset
+
+ ויהי 
+\begin_inset Formula $1\le i\le d$
+\end_inset
+
+.
+ אם קיימת 
+\begin_inset Formula $\frac{\partial f}{\partial x_{i}}(\overline{a})$
+\end_inset
+
+ אזי היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר פונקציה 
+\begin_inset Formula $\varphi(x_{i})=f(a_{1},...,a_{i-1},x_{i},a_{i+1},...,a_{d})$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\varphi:(a_{i}-\epsilon,a_{i}+\epsilon)\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ עבור כל 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ קרוב ל- 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+f(a_{1},...,a_{i-1},x_{i},a_{i+1},...,a_{d})\le f(\overline{a})
+\]
+
+\end_inset
+
+ או
+\begin_inset Formula 
+\[
+f(a_{1},...,a_{i-1},x_{i},a_{i+1},...,a_{d})\ge f(\overline{a})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ נקודת אקסטרימום של 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ לפי התנאי קיימת 
+\begin_inset Formula $\varphi'(a_{i})=\frac{\partial f}{\partial x_{i}}(\overline{a})$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\varphi'(a_{i})=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
 משפט
 \family roman
 \series medium
@@ -4122,6 +4219,31 @@ k_{1}+...+k_{d}=m+1
 \noun default
 \color inherit
 1
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)תנאי מספיק לקיום אקסטרימום(
 \end_layout
 
 \begin_layout Standard
@@ -4401,6 +4523,176 @@ f(\overline{x_{0}}+\overline{\Delta x})-f(\overline{x_{0}})=\frac{1}{2}(l_{f}(\o
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Paragraph
+משפט
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)תנאי מספיק לאי קיום אקסטרימום(
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $l_{f}$
+\end_inset
+
+ )כפי שמוגדרת במשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+( אי מוחלטת אז 
+\begin_inset Formula $\overline{x_{0}}$
+\end_inset
+
+ לא נקודת אקסטרימום.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי התנאי קיימים 
+\begin_inset Formula $\overline{t_{1}},\overline{t_{2}}\in\mathbb{R}^{d}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula 
+\[
+l_{f}(\overline{t_{1}})>0\land l_{f}(\overline{t_{2}})<0
+\]
+
+\end_inset
+
+ עבור 
+\begin_inset Formula $\rho>0$
+\end_inset
+
+ קטן, נגדיר 
+\begin_inset Formula $\overline{\Delta x_{1}}=\rho\overline{t_{1}}$
+\end_inset
+
+.
+ מתקיים
+\begin_inset Formula 
+\[
+f(\overline{x_{0}}+\overline{\Delta x_{1}})-f(\overline{x_{0}})=\frac{1}{2}(l_{f}(\overline{\Delta x_{1}})+R(\overline{\Delta x_{1}}))=\frac{1}{2}(\rho^{2}l_{f}(\overline{t_{1}})+R(\overline{\Delta x_{1}}))
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+|R(\overline{\Delta x_{1}})|<\epsilon d\Vert\overline{\Delta x_{1}}\Vert^{2}=\epsilon d\rho^{2}\Vert\overline{t_{1}}\Vert^{2}\ \ \ \forall\Vert\overline{\Delta x_{1}}\Vert\le\delta_{1}\iff\rho<\frac{\delta_{1}}{\Vert\overline{t_{1}}\Vert}
+\]
+
+\end_inset
+
+ עבור 
+\begin_inset Formula $\epsilon=\frac{l_{f}(\overline{t_{1}})}{2d}$
+\end_inset
+
+ ועבור 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ קטן מספיק מתקיים
+\begin_inset Formula 
+\[
+f(\overline{x_{0}}+\overline{\Delta x_{1}})-f(\overline{x_{0}})\ge\frac{1}{2}\rho^{2}(l_{f}(\overline{t_{1}})-\frac{1}{2}l_{f}(\overline{t_{1}}))>0
+\]
+
+\end_inset
+
+ באופן דומה עבור 
+\begin_inset Formula $\rho>0$
+\end_inset
+
+ קטן ו- 
+\begin_inset Formula $\overline{\Delta x_{2}}=\rho\overline{t_{2}}$
+\end_inset
+
+ יתקיים: 
+\begin_inset Formula 
+\[
+f(\overline{x_{0}}+\overline{\Delta x_{2}})-f(\overline{x_{0}})=\frac{1}{2}\rho^{2}(|l_{f}(\overline{t_{2}})|-|\frac{1}{2}l_{f}(\overline{t_{2}})|)<0
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
